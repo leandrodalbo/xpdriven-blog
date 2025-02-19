@@ -7,13 +7,12 @@ import { articles } from './data/blog-articles';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export const App = () => {
-    const setSidebar = () => { }
     return (
         <Router>
             <div className="flex flex-col min-h-screen">
                 <BlogHeader />
                 <div className="flex flex-1">
-                    <BlogSidebar setDisplayed={setSidebar} articles={articles} />
+                    <BlogSidebar articles={articles} />
                     <main className="flex-1 p-4 bg-gray-800">
                         <Routes>
                             <Route path="/" element={<ArticlePage articles={articles} />} />
