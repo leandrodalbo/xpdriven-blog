@@ -21,7 +21,6 @@ const BlogSidebar = ({ articles }: BlogSidebarProps) => {
     };
 
 
-
     return (
         <aside
             className={`${isDisplayed ? "w-full md:w-1/4 lg:w-1/5" : "w-12"} max-w-xs bg-gray-800 p-2 transition-all duration-300`}>
