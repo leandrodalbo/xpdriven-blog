@@ -11,7 +11,7 @@ const Intro = () => (
             This blog is dedicated to exploring the best practices in software development, focusing on
             <span className="text-gray-100  font-semibold"> Test-Driven Development (TDD)</span>,
             <span className="text-gray-100  font-semibold"> Extreme Programming (XP)</span>,
-            <span className="text-gray-100  font-semibold"> Clean Code</span>, and
+            <span className="text-gray-100  font-semibold"> Clean Code</span> and
             <span className="text-gray-100  font-semibold"> Agile</span> methodologies.
         </p>
 
