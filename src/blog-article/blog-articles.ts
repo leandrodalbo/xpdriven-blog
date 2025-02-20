@@ -3,10 +3,10 @@ import { BlogArticle } from "../types";
 export const articles: BlogArticle[] = [
     {
         id: 0,
-        title: "Introduction to TDD",
+        title: "Welcome to the XPDriven Blog",
     },
     {
         id: 1,
-        title: "Extreme Programming (XP) Explained",
+        title: "What is TDD? A Beginner’s Guide",
     }
 ];
