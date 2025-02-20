@@ -1,5 +1,4 @@
 import { FaGithub, FaLinkedin, FaSyncAlt } from "react-icons/fa";
-import "./header.css"
 
 const BlogHeader = () => {
     return (

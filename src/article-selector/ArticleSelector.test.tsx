@@ -7,7 +7,7 @@ describe("Article Selector Tests", () => {
     it("returns the selected article", () => {
         const Intro = articleSelector[0];
         render(<Intro />);
-        expect(screen.getByText("Introduction to TDD")).toBeInTheDocument();
+        expect(screen.getByText("Welcome to the XPDriven Blog")).toBeInTheDocument();
     });
 
 
