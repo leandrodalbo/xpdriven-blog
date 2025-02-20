@@ -1,0 +1,17 @@
+@keyframes spin-color {
+    0% {
+        transform: rotate(0deg);
+        color: red;
+    }
+    50% {
+        color: green;
+    }
+    100% {
+        transform: rotate(360deg);
+        color: red;
+    }
+}
+
+.animate-spin-color {
+    animation: spin-color 3s linear infinite; 
+}

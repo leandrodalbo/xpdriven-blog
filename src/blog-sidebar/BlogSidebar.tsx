@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { FaArrowLeft } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { BlogArticle } from "../types";
 
 interface BlogSidebarProps {
@@ -10,7 +9,7 @@ interface BlogSidebarProps {
 
 const BlogSidebar = ({ articles }: BlogSidebarProps) => {
     const [articlesList, setArticlesList] = useState(articles);
-    const [isDisplayed, setIsDisplayed] = useState(true)
+    const [isDisplayed, setIsDisplayed] = useState(true);
 
     const filterArticles = (value: string) => {
         const withTitle = articles.filter((it) =>
@@ -20,39 +19,51 @@ const BlogSidebar = ({ articles }: BlogSidebarProps) => {
         setArticlesList(withTitle);
     };
 
-
     return (
         <aside
-            className={`${isDisplayed ? "w-full md:w-1/4 lg:w-1/5" : "w-12"} max-w-xs bg-gray-800 p-2 transition-all duration-300`}>
-            {!isDisplayed && <FaArrowRight className="text-white text-lg ml-2" onClick={() => setIsDisplayed(true)} />}
-            {isDisplayed && <div>
-                <div className="flex items-center bg-gray-700 rounded w-full mb-4">
+            className={`${isDisplayed ? "w-full md:w-1/4 lg:w-1/5" : "w-12"} 
+                        max-w-xs bg-gray-800 border-r border-yellow-400 p-2 
+                        transition-all duration-300`}
+        >
+            {!isDisplayed && (
+                <FaArrowRight
+                    className="text-yellow-300 hover:text-orange-400 text-lg ml-2 cursor-pointer transition duration-300"
+                    onClick={() => setIsDisplayed(true)}
+                    data-testid="arrow-right"
+                />
+            )}
 
-                    <FaArrowLeft className="text-white text-lg ml-2" onClick={() => setIsDisplayed(false)} />
+            {isDisplayed && (
+                <div>
+                    <div className="flex items-center bg-gray-700 rounded w-full mb-4">
+                        <FaArrowLeft
+                            className="text-yellow-300 hover:text-orange-400 text-lg ml-2 cursor-pointer transition duration-300"
+                            onClick={() => setIsDisplayed(false)}
+                            data-testid="arrow-left"
+                        />
 
-                    <input
-                        type="text"
-                        placeholder="Search articles..."
-                        className="p-1 text-white bg-gray-700 rounded w-full ml-2 focus:outline-none"
-                        onChange={(e) => filterArticles(e.target.value)}
-                    />
+                        <input
+                            type="text"
+                            placeholder="Search articles..."
+                            className="p-1 text-pink-300 placeholder-pink-400 bg-gray-700 rounded w-full ml-2 focus:outline-none"
+                            onChange={(e) => filterArticles(e.target.value)}
+                        />
+                    </div>
+
+                    <ul>
+                        {articlesList.map((article) => (
+                            <li key={article.id} className="mb-4">
+                                <Link
+                                    to={`/article/${article.id}`}
+                                    className="text-yellow-300 hover:text-orange-400 transition duration-300"
+                                >
+                                    {article.title}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
-
-                <ul>
-                    {articlesList.map((article) => (
-                        <li key={article.id} className="mb-4">
-                            <Link
-                                to={`/article/${article.id}`}
-                                className="text-blue-400 hover:underline"
-                            >
-                                {article.title}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-
-            </div>
-            }
+            )}
         </aside>
     );
 };
