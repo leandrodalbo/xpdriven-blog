@@ -13,7 +13,7 @@ A simple blog built with **React, Vite, TypeScript, TailwindCSS, and React Route
 
 ```bash
 
-git clone git@github.com:leandrodalbo/com-xpdriven.git
+git clone git@github.com:leandrodalbo/xpdriven-blog.git
 cd com-xpdriven
 
 ```

@@ -1,6 +1,8 @@
 const BlogFooter = () => (
-  <footer className="bg-gray-900 text-gray-200 p-4 text-center">
-    <p>© {new Date().getFullYear()} XPDriven Blog.</p>
+  <footer className="bg-gray-800 border-t border-yellow-400 p-4 text-center">
+    <p className="text-yellow-300 hover:text-orange-400 transition duration-300">
+      © {new Date().getFullYear()} XPDriven Blog. Made with ❤️
+    </p>
   </footer>
 );
 
