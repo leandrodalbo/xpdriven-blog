@@ -8,5 +8,9 @@ export const articles: BlogArticle[] = [
     {
         id: 1,
         title: "What is TDD? A Beginner’s Guide",
+    },
+    {
+        id: 2,
+        title: "What Is Clean Code? A Beginner’s Guide",
     }
 ];
