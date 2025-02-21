@@ -1,5 +1,5 @@
 
-import introimg from "../../assets/intro.png"
+import introimg from "../assets/intro.png"
 
 const Intro = () => (
     <article className="flex flex-col justify-center items-center min-h-screen bg-gray-800 text-gray-300 p-6 md:p-8 lg:p-10 space-y-6">
