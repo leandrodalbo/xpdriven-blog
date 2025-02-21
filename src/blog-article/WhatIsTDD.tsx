@@ -3,7 +3,7 @@ import { FaSyncAlt } from "react-icons/fa";
 const WhatIsTDD = () => (
     <article className="p-4 sm:p-6 md:p-8 bg-gray-800 text-gray-300 rounded-lg shadow-lg w-full mx-auto">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6 text-gray-100 text-center">
-            What is Test-Driven Development (TDD)?
+            What is Test-Driven Development?
         </h1>
 
         <p className="text-lg sm:text-xl leading-relaxed text-gray-300 mb-4">
