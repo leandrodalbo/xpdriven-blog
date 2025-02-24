@@ -1,31 +1,23 @@
-import { FaSyncAlt } from "react-icons/fa";
-
 const WhatIsTDD = () => (
-  <article className="p-3 sm:p-4 md:p-6 bg-gray-800 text-gray-300 rounded-lg shadow-lg w-full max-w-none mx-auto overflow-hidden">
-    <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-gray-100 text-center break-words">
-      What is Test-Driven Development?
-    </h1>
+  <article className="blog-article">
+    <h1 className="blog-article-h1">What is Test-Driven Development?</h1>
 
-    <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-4">
-      Test-Driven Development (TDD) is a software development approach where
-      tests are written before implementation. This process ensures
-      functionality and design integrity.
+    <p className="blog-article-p">
+      <strong>Test-Driven Development (TDD)</strong> is a software development
+      approach where tests are written before implementation. This process
+      ensures functionality and design integrity.
     </p>
 
-    <h2 className="text-lg sm:text-xl font-semibold mt-6 text-gray-100 break-words">
-      👨‍💻 Kent Beck: The Creator of TDD
-    </h2>
-    <p className="text-gray-300 mt-2">
-      Kent Beck developed TDD as part of Extreme Programming (XP) to improve
-      software design, reliability, and maintainability.
+    <h2 className="blog-article-h2">👨‍💻 Kent Beck: The Creator of TDD</h2>
+    <p className="blog-article-p">
+      <strong>Kent Beck</strong> developed TDD as part of{" "}
+      <strong>Extreme Programming (XP)</strong> to improve software design,
+      reliability, and maintainability.
     </p>
 
-    <h2 className="flex flex-wrap items-center space-x-2 text-lg sm:text-xl font-semibold mt-6 text-gray-100">
-      <FaSyncAlt className="animate-spin-color" />
-      <span>The TDD Cycle</span>
-    </h2>
+    <h2 className="blog-article-h2">The TDD Cycle</h2>
 
-    <ul className="list-disc list-inside text-gray-400 mt-3 space-y-2">
+    <ul className="blog-article-ul">
       <li>
         <strong className="text-red-400">Red:</strong> Write a failing test.
       </li>
@@ -39,10 +31,8 @@ const WhatIsTDD = () => (
       </li>
     </ul>
 
-    <h2 className="text-lg sm:text-xl font-semibold mt-6 text-gray-100">
-      🛠 Benefits of TDD
-    </h2>
-    <ul className="list-disc list-inside text-gray-400 mt-3 space-y-2">
+    <h2 className="blog-article-h2">🛠 Benefits of TDD</h2>
+    <ul className="blog-article-ul">
       <li>
         🔍 <strong>Fewer Bugs:</strong> Catch issues early.
       </li>
@@ -58,17 +48,13 @@ const WhatIsTDD = () => (
       </li>
     </ul>
 
-    <div className="mt-6 p-3 bg-gray-700 rounded-lg">
-      <p className="text-gray-400">
-        Let's see TDD in action with Python and Kotlin examples! 🐍 + ☕
-      </p>
-    </div>
+    <p className="blog-article-p">
+      Let's see TDD in action with Python and Kotlin examples! 🐍 + ☕
+    </p>
 
-    <h2 className="text-lg sm:text-xl font-semibold mt-6 text-gray-100">
-      📝 Example 1: TDD in Python
-    </h2>
-    <p className="text-gray-300 mt-2">Step 1: Write a failing test.</p>
-    <pre className="bg-gray-900 text-green-300 p-3 rounded-md mt-3 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
+    <h2 className="blog-article-h2">📝 Example 1: TDD in Python</h2>
+    <p className="blog-article-p">Step 1: Write a failing test.</p>
+    <pre className="blog-article-pre">
       {`
 import pytest
 
@@ -77,21 +63,17 @@ def test_add():
 `}
     </pre>
 
-    <p className="text-gray-300 mt-4">Step 2: Implement the function.</p>
-    <pre className="bg-gray-900 text-green-300 p-3 rounded-md mt-3 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
+    <p className="blog-article-p">Step 2: Implement the function.</p>
+    <pre className="blog-article-pre">
       {`
 def add(a, b):
     return a + b
 `}
     </pre>
 
-    <h2 className="text-lg sm:text-xl font-semibold mt-6 text-gray-100">
-      📝 Example 2: TDD in Kotlin
-    </h2>
-    <p className="text-gray-300 mt-2">
-      Step 1: Write a failing test using JUnit.
-    </p>
-    <pre className="bg-gray-900 text-yellow-300 p-3 rounded-md mt-3 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
+    <h2 className="blog-article-h2">📝 Example 2: TDD in Kotlin</h2>
+    <p className="blog-article-p">Step 1: Write a failing test using JUnit.</p>
+    <pre className="blog-article-pre">
       {`
 import org.junit.Test
 import kotlin.test.assertEquals
@@ -105,8 +87,8 @@ class CalculatorTest {
 `}
     </pre>
 
-    <p className="text-gray-300 mt-4">Step 2: Implement the function.</p>
-    <pre className="bg-gray-900 text-yellow-300 p-3 rounded-md mt-3 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
+    <p className="blog-article-p">Step 2: Implement the function.</p>
+    <pre className="blog-article-pre">
       {`
 fun add(a: Int, b: Int): Int {
     return a + b
@@ -114,10 +96,8 @@ fun add(a: Int, b: Int): Int {
 `}
     </pre>
 
-    <h2 className="text-lg sm:text-xl font-semibold mt-6 text-gray-100">
-      🤔 Common TDD Concerns
-    </h2>
-    <ul className="list-disc list-inside text-gray-400 mt-3 space-y-2">
+    <h2 className="blog-article-h2">🤔 Common TDD Concerns</h2>
+    <ul className="blog-article-ul">
       <li>
         <strong>“Writing tests first feels weird.”</strong> 🚀 Reliable software
         is the goal.
@@ -132,10 +112,8 @@ fun add(a: Int, b: Int): Int {
       </li>
     </ul>
 
-    <h2 className="text-lg sm:text-xl font-semibold mt-6 text-gray-100">
-      🔗 Learn More About TDD
-    </h2>
-    <ul className="list-disc list-inside text-gray-400 mt-3 space-y-2">
+    <h2 className="blog-article-h2">🔗 Learn More About TDD</h2>
+    <ul className="blog-article-ul">
       <li>
         <a
           href="https://www.youtube.com/watch?v=x1O5cKCAgdk"
