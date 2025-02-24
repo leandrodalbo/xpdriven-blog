@@ -1,4 +1,5 @@
 import { FaSyncAlt } from "react-icons/fa";
+import codingMonkeys from "../assets/codingmonkeys.jpg";
 
 const CodingMonkeys = () => (
   <article className="p-4 md:p-6 lg:p-8 bg-gray-800 text-gray-300 rounded-lg shadow-lg text-center">
@@ -13,6 +14,12 @@ const CodingMonkeys = () => (
     <div className="mt-6 p-4 bg-gray-700 rounded-lg text-gray-400">
       <FaSyncAlt className="animate-spin-color inline-block text-green-400 animate-spin-slow mr-2" />
     </div>
+
+    <img
+      src={codingMonkeys}
+      alt="Clean Code vs Dirty Code Chart"
+      className="mt-3 w-auto max-w-full sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] rounded-lg mx-auto"
+    />
 
     <p className="mt-6 text-gray-400 text-sm">🚀 Coming soon</p>
   </article>

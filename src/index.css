@@ -3,33 +3,83 @@
 @tailwind utilities;
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 
-  @keyframes spin-color {
-    0% {
-        transform: rotate(0deg);
-        color: red;
-    }
-    50% {
-        color: green;
-    }
-    100% {
-        transform: rotate(360deg);
-        color: red;
-    }
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes spin-color {
+  0% {
+    transform: rotate(0deg);
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    transform: rotate(360deg);
+    color: red;
+  }
 }
 
 .animate-spin-color {
-    animation: spin-color 3s linear infinite; 
+  animation: spin-color 3s linear infinite;
+}
+
+@layer components {
+  .blog-article {
+    @apply p-3 sm:p-4 md:p-6 bg-gray-800 text-gray-300 rounded-lg shadow-lg w-full max-w-none mx-auto overflow-hidden;
+  }
+
+  .blog-article-h1 {
+    @apply text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-gray-100 text-center break-words;
+  }
+
+  .blog-article-h2 {
+    @apply text-lg sm:text-xl font-semibold mt-6 text-gray-100 break-words;
+  }
+
+  .blog-article-h4 {
+    @apply text-base font-semibold mt-6 text-gray-100 break-words;
+  }
+
+  .blog-article-p {
+    @apply text-base leading-relaxed text-gray-300 mb-4;
+  }
+
+  .blog-article-pre {
+    @apply bg-gray-900 text-yellow-300 p-3 rounded-md mt-3 text-base overflow-x-auto whitespace-pre-wrap;
+  }
+
+  .blog-article-green-code {
+    @apply text-green-400;
+  }
+
+  .blog-article-red-code {
+    @apply text-red-400;
+  }
+
+  .blog-article-quote {
+    @apply text-base sm:text-lg leading-relaxed text-gray-300 mb-4 border-l-4 border-blue-500 pl-3 italic mt-2;
+  }
+
+  .blog-article-img {
+    @apply mt-3 w-auto max-w-full sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] rounded-lg ml-0;
+  }
+
+  .blog-article-a {
+    @apply text-blue-400 underline mt-2 inline-block;
+  }
+
+  .blog-article-ul {
+    @apply list-disc list-inside text-gray-400 mt-3 space-y-2;
+  }
 }
