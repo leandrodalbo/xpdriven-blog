@@ -3,7 +3,7 @@ import BlogSidebar from "../blog-sidebar/BlogSidebar";
 import ArticlePage from "../article-page/ArticlePage";
 import BlogFooter from "../blog-footer/BlogFooter";
 import { articles } from "../blog-article/blog-articles";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 export const App = () => {
   return (
