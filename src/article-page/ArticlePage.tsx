@@ -8,7 +8,7 @@ const ArticlePage = () => {
   const articleId = () => {
     const selectedId = Number(id);
 
-    return isNaN(selectedId) || selectedId >= articles.length ? 3 : selectedId;
+    return isNaN(selectedId) || selectedId >= articles.length ? 0 : selectedId;
   };
 
   return articleSelector[articleId()]();

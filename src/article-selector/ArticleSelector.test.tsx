@@ -4,8 +4,8 @@ import { describe, expect, it } from "vitest";
 
 describe("Article Selector Tests", () => {
   it("returns the selected article", () => {
-    const Intro = articleSelector[3];
-    render(<Intro />);
+    const Monkeys = articleSelector[0];
+    render(<Monkeys />);
     expect(screen.getByText("Coding Monkeys")).toBeInTheDocument();
   });
 
