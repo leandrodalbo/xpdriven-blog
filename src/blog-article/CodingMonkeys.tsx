@@ -4,7 +4,7 @@ import codingMonkeys from "../assets/codingmonkeys.jpg";
 const CodingMonkeys = () => (
   <article className="p-4 md:p-6 lg:p-8 bg-gray-800 text-gray-300 rounded-lg shadow-lg text-center">
     <h1 className="text-3xl md:text-4xl font-semibold mb-6 text-gray-100">
-      CodingMonkeys
+      Coding Monkeys
     </h1>
 
     <p className="text-lg sm:text-xl leading-relaxed text-gray-300">
