@@ -3,18 +3,18 @@ import { BlogArticle } from "../types";
 export const articles: BlogArticle[] = [
   {
     id: 0,
-    title: "Welcome to the XPDriven Blog",
+    title: "Coding Monkeys",
   },
   {
     id: 1,
-    title: "What is TDD? A Beginner’s Guide",
+    title: "Welcome to the XPDriven Blog",
   },
   {
     id: 2,
-    title: "What Is Clean Code? A Beginner’s Guide",
+    title: "What is TDD? A Beginner’s Guide",
   },
   {
     id: 3,
-    title: "Coding Monkeys",
+    title: "What Is Clean Code? A Beginner’s Guide",
   },
 ];

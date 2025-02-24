@@ -12,7 +12,7 @@ describe("BlogHeader Tests", () => {
     render(<BlogHeader />);
     expect(
       screen.getByRole("link", { name: /XPDriven Blog/i })
-    ).toHaveAttribute("href", "/article/3");
+    ).toHaveAttribute("href", "/");
   });
 
   it("renders the links to Linkedin and Github", () => {

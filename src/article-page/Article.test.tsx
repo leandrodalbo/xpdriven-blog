@@ -32,11 +32,11 @@ describe("ArticlePage Tests", () => {
     renderWithRouter();
 
     expect(
-      screen.getByText("What is Test-Driven Development?")
+      screen.getByText("Welcome to the XPDriven Blog")
     ).toBeInTheDocument();
   });
 
-  it("renders Intro on non number article id", () => {
+  it("renders Coding Monkeys on non number article id", () => {
     (reactRouterDom.useParams as vi.Mock).mockReturnValue({ id: "abc" });
 
     renderWithRouter();
@@ -44,7 +44,7 @@ describe("ArticlePage Tests", () => {
     expect(screen.getByText("Coding Monkeys")).toBeInTheDocument();
   });
 
-  it("renders Intro on invalid article id", () => {
+  it("renders Coding Monkeys on invalid article id", () => {
     (reactRouterDom.useParams as vi.Mock).mockReturnValue({ id: "3535" });
 
     renderWithRouter();
