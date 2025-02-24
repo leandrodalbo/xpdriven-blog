@@ -52,7 +52,7 @@ body {
   }
 
   .blog-article-p {
-    @apply text-base leading-relaxed text-gray-300 mb-4;
+    @apply text-base leading-relaxed text-gray-300 mb-4 mt-4;
   }
 
   .blog-article-pre {
@@ -81,5 +81,9 @@ body {
 
   .blog-article-ul {
     @apply list-disc list-inside text-gray-400 mt-3 space-y-2;
+  }
+
+  .blog-article-div {
+    @apply w-full md:w-[512px] h-48 md:h-72 flex justify-center items-center mx-auto;
   }
 }

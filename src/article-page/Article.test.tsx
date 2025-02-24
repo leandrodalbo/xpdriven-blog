@@ -5,47 +5,50 @@ import ArticlePage from "../article-page/ArticlePage";
 import * as reactRouterDom from "react-router-dom";
 
 vi.mock("react-router-dom", async () => {
-    const actual = await vi.importActual<typeof reactRouterDom>("react-router-dom");
-    return {
-        ...actual,
-        useParams: vi.fn(),
-    };
+  const actual = await vi.importActual<typeof reactRouterDom>(
+    "react-router-dom"
+  );
+  return {
+    ...actual,
+    useParams: vi.fn(),
+  };
 });
 
 const renderWithRouter = () =>
-    render(
-        <BrowserRouter>
-            <ArticlePage />
-        </BrowserRouter>
-    );
+  render(
+    <BrowserRouter>
+      <ArticlePage />
+    </BrowserRouter>
+  );
 
 describe("ArticlePage Tests", () => {
-    afterEach(() => {
-        vi.restoreAllMocks();
-    });
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
 
-    it("renders the correct article based on a valid ID", () => {
-        (reactRouterDom.useParams as vi.Mock).mockReturnValue({ id: "1" });
+  it("renders the correct article based on a valid ID", () => {
+    (reactRouterDom.useParams as vi.Mock).mockReturnValue({ id: "1" });
 
-        renderWithRouter();
+    renderWithRouter();
 
-        expect(screen.getByText("What is Test-Driven Development?")).toBeInTheDocument();
-    });
+    expect(
+      screen.getByText("What is Test-Driven Development?")
+    ).toBeInTheDocument();
+  });
 
-    it("renders Intro on non number article id", () => {
-        (reactRouterDom.useParams as vi.Mock).mockReturnValue({ id: "abc" });
+  it("renders Intro on non number article id", () => {
+    (reactRouterDom.useParams as vi.Mock).mockReturnValue({ id: "abc" });
 
-        renderWithRouter();
+    renderWithRouter();
 
-        expect(screen.getByText("Welcome to the XPDriven Blog")).toBeInTheDocument();
-    });
+    expect(screen.getByText("Coding Monkeys")).toBeInTheDocument();
+  });
 
-    it("renders Intro on invalid article id", () => {
-        (reactRouterDom.useParams as vi.Mock).mockReturnValue({ id: "3535" });
+  it("renders Intro on invalid article id", () => {
+    (reactRouterDom.useParams as vi.Mock).mockReturnValue({ id: "3535" });
 
-        renderWithRouter();
+    renderWithRouter();
 
-        expect(screen.getByText("Welcome to the XPDriven Blog")).toBeInTheDocument();
-    });
-
+    expect(screen.getByText("Coding Monkeys")).toBeInTheDocument();
+  });
 });
