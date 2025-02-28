@@ -57,12 +57,6 @@ const CodingMonkeys = () => (
       alt="monkey-driving"
       className="blog-article-img"
     />
-
-    <h2 className="blog-article-h2">Conclusion</h2>
-    <p className="blog-article-p">
-      Should we go back to 1990s and start writing large documentation that
-      nobody reads or understand?
-    </p>
   </article>
 );
 
