@@ -50,7 +50,7 @@ const CodingMonkeys = () => (
     </p>
 
     <h2 className="blog-article-h2">Conclusion</h2>
-    <p blog-article-p>Don't be a coding Monkey.</p>
+    <p className="blog-article-p">Don't be a coding Monkey.</p>
 
     <img
       src={monkeydriving}
