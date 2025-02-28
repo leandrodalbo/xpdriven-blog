@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import articleSelector from "../article-selector/ArticleSelector";
-import { articles } from "../blog-article/blog-articles";
+import { articles } from "../blog-articles";
 
 const ArticlePage = () => {
   const { id } = useParams();

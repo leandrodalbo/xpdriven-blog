@@ -1,4 +1,4 @@
-import { BlogArticle } from "../types";
+import { BlogArticle } from "./types";
 
 export const articles: BlogArticle[] = [
   {
@@ -20,5 +20,9 @@ export const articles: BlogArticle[] = [
   {
     id: 4,
     title: "Agile Manifesto: What It Means Today",
+  },
+  {
+    id: 5,
+    title: "Why Code Readability Matters More Than You Think",
   },
 ];
