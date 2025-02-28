@@ -50,7 +50,14 @@ const CodingMonkeys = () => (
     </p>
 
     <h2 className="blog-article-h2">Conclusion</h2>
-    <p className="blog-article-p">Don't be a coding Monkey.</p>
+    <a
+      href="https://www.youtube.com/watch?v=S_5nl1uJ8bg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="blog-article-a"
+    >
+      Coding Monkeys (Martin Fowler)
+    </a>
 
     <img
       src={monkeydriving}
