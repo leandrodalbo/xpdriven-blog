@@ -25,4 +25,8 @@ export const articles: BlogArticle[] = [
     id: 5,
     title: "Why Code Readability Matters More Than You Think",
   },
+  {
+    id: 6,
+    title: "Scrum vs. Kanban: Which One Should You Choose?",
+  },
 ];

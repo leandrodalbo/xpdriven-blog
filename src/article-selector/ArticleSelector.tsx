@@ -4,6 +4,7 @@ import CodingMonkeys from "../blog-article/CodingMonkeys";
 import WhatIsTDD from "../blog-article/WhatIsTDD";
 import AgileManifesto from "../blog-article/AgileManifesto";
 import CodeReadabilityMatters from "../blog-article/CodeReadabilityMatters";
+import ScrumOrKanban from "../blog-article/ScrumOrKanban";
 
 const articleSelector: Record<number, () => JSX.Element> = {
   0: () => <CodingMonkeys />,
@@ -12,6 +13,7 @@ const articleSelector: Record<number, () => JSX.Element> = {
   3: () => <WhatIsCleanCode />,
   4: () => <AgileManifesto />,
   5: () => <CodeReadabilityMatters />,
+  6: () => <ScrumOrKanban />,
 };
 
 export default articleSelector;
