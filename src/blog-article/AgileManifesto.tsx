@@ -1,23 +1,15 @@
+import { ArticleHeader } from "../article-header/ArticleHeader";
 import agileImage from "../assets/agile-manifesto.png";
 import agileWaters from "../assets/agilewaterfall.png";
+import { ArticleData } from "../types";
 
-const AgileManifesto = () => (
+export interface AgileManifestoProps {
+  data: ArticleData;
+}
+
+const AgileManifesto = ({ data }: AgileManifestoProps) => (
   <article className="blog-article">
-    <h1 className="blog-article-h1">
-      The Agile Manifesto: What It Means Today
-    </h1>
-
-    <p className="blog-article-p">
-      In 2001, seventeen software developers gathered at a ski resort in Utah to
-      explore a more effective approach to software development. Their
-      collaboration led to a set of values and principles that revolutionized
-      the industry.
-    </p>
-
-    <p className="blog-article-p">
-      But <strong>what does Agile really mean today?</strong> has it been
-      misused?
-    </p>
+    <ArticleHeader data={data.headerData} />
 
     <h2 className="blog-article-h2">The Four Core Values of Agile</h2>
 
