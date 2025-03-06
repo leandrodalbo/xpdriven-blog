@@ -23,7 +23,7 @@ export const articles: BlogArticle[] = [
   },
   {
     id: 5,
-    title: "Why Code Readability Matters More Than You Think",
+    title: "Code Readability Matters More Than You Think",
   },
   {
     id: 6,

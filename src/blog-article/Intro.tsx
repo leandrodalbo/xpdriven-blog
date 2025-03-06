@@ -1,15 +1,15 @@
 import introimg from "../assets/intro.png";
 
-const Intro = () => (
-  <article className="blog-article">
-    <h1 className="blog-article-h1">Welcome to the XPDriven Blog</h1>
+import { ArticleHeader } from "../article-header/ArticleHeader";
+import { ArticleData } from "../types";
 
-    <p className="blog-article-p">
-      This blog is dedicated to exploring the best practices in software
-      development, focusing on<strong> Test-Driven Development (TDD)</strong>,
-      <strong> Extreme Programming (XP) </strong>,<strong> Clean Code</strong>{" "}
-      and <strong> Agile methodologies</strong>.
-    </p>
+export interface IntroProps {
+  data: ArticleData;
+}
+
+const Intro = ({ data }: IntroProps) => (
+  <article className="blog-article">
+    <ArticleHeader data={data.headerData} />
 
     <p className="blog-article-p">
       <strong>♻️ TDD</strong> helps you write better code by ensuring tests come
