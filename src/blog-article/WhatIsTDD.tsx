@@ -1,19 +1,14 @@
-const WhatIsTDD = () => (
+import { ArticleHeader } from "../article-header/ArticleHeader";
+
+import { ArticleData } from "../types";
+
+export interface WhatIsTDDProps {
+  data: ArticleData;
+}
+
+const WhatIsTDD = ({ data }: WhatIsTDDProps) => (
   <article className="blog-article">
-    <h1 className="blog-article-h1">What is Test-Driven Development?</h1>
-
-    <p className="blog-article-p">
-      <strong>Test-Driven Development (TDD)</strong> is a software development
-      approach where tests are written before implementation. This process
-      ensures functionality and design integrity.
-    </p>
-
-    <h2 className="blog-article-h2">👨‍💻 Kent Beck: The Creator of TDD</h2>
-    <p className="blog-article-p">
-      <strong>Kent Beck</strong> developed TDD as part of{" "}
-      <strong>Extreme Programming (XP)</strong> to improve software design,
-      reliability, and maintainability.
-    </p>
+    <ArticleHeader data={data.headerData} />
 
     <h2 className="blog-article-h2">The TDD Cycle</h2>
 

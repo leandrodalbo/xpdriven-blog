@@ -1,22 +1,16 @@
 import quickdirty from "../assets/quickdirty.png";
 
-const WhatIsCleanCode = () => (
+import { ArticleHeader } from "../article-header/ArticleHeader";
+
+import { ArticleData } from "../types";
+
+export interface WhatIsCleanCodeProps {
+  data: ArticleData;
+}
+
+const WhatIsCleanCode = ({ data }: WhatIsCleanCodeProps) => (
   <article className="blog-article">
-    <h1 className="blog-article-h1">What Is Clean Code? A Beginner’s Guide</h1>
-    <p className="blog-article-p">
-      Ever struggled with messy, confusing code?{" "}
-      <span>
-        Clean code makes software engineering easier, whether you're a beginner
-        or have many years of experience in the industry.
-      </span>
-    </p>
-
-    <p className="blog-article-p ">
-      But what exactly is <strong>clean code</strong>, and why does it matter?
-      Let's try to understand its principles and write better and more
-      maintainable code.
-    </p>
-
+    <ArticleHeader data={data.headerData} />
     <h2 className="blog-article-h2">What Is Clean Code?</h2>
     <p className="blog-article-p">
       Clean code is software that’s easy to{" "}

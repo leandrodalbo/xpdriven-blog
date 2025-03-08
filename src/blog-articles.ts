@@ -15,7 +15,7 @@ export const articles: BlogArticle[] = [
   },
   {
     id: 3,
-    title: "What Is Clean Code? A Beginner’s Guide",
+    title: "Clean Code: A Beginner’s Guide",
   },
   {
     id: 4,

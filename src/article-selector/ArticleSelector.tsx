@@ -9,12 +9,14 @@ import { codingMonkeysContent } from "../articles-content/CodingMonkeys";
 import { agileManifestoContent } from "../articles-content/AgileManifesto";
 import { codeReadabilityMatters } from "../articles-content/CodeReadabilityMatters";
 import { introContent } from "../articles-content/Intro";
+import { whatistdd } from "../articles-content/WhatIsTDD";
+import { whatiscleancode } from "../articles-content/WhatIsCleanCode";
 
 const articleSelector: Record<number, () => JSX.Element> = {
   0: () => <CodingMonkeys data={codingMonkeysContent} />,
   1: () => <Intro data={introContent} />,
-  2: () => <WhatIsTDD />,
-  3: () => <WhatIsCleanCode />,
+  2: () => <WhatIsTDD data={whatistdd} />,
+  3: () => <WhatIsCleanCode data={whatiscleancode} />,
   4: () => <AgileManifesto data={agileManifestoContent} />,
   5: () => <CodeReadabilityMatters data={codeReadabilityMatters} />,
   6: () => <ScrumOrKanban />,

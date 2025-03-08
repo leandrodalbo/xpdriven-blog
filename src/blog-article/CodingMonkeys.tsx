@@ -38,14 +38,28 @@ const CodingMonkeys = ({ data }: CodingMonkeysProps) => (
     </p>
 
     <h2 className="blog-article-h2">Conclusion</h2>
-    <a
-      href="https://www.youtube.com/watch?v=S_5nl1uJ8bg"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="blog-article-a"
-    >
-      Coding Monkeys (Martin Fowler)
-    </a>
+    <ul className="blog-article-h2">
+      <li>
+        <a
+          href="https://www.youtube.com/watch?v=WubVswYg2CE"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="blog-article-a"
+        >
+          The end of programmers
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/watch?v=S_5nl1uJ8bg"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="blog-article-a"
+        >
+          Coding Monkeys (Martin Fowler)
+        </a>
+      </li>
+    </ul>
 
     <img
       src={monkeydriving}
