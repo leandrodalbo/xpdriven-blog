@@ -19,7 +19,7 @@ export const articles: BlogArticle[] = [
   },
   {
     id: 4,
-    title: "Agile Manifesto: What It Means Today",
+    title: "About the Agile Manifesto",
   },
   {
     id: 5,
