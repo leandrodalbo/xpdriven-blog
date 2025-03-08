@@ -9,6 +9,8 @@ export interface ArticleHeaderData {
   h2?: string;
   img?: string;
   p2?: string;
+  linkText?: string;
+  linkURL?: string;
 }
 
 export interface ArticleData {

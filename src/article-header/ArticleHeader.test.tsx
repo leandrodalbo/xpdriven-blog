@@ -5,6 +5,7 @@ import { ArticleHeader } from "./ArticleHeader";
 
 import { codingMonkeysContent } from "../articles-content/CodingMonkeys";
 import { agileManifestoContent } from "../articles-content/AgileManifesto";
+import { whatistdd } from "../articles-content/WhatIsTDD";
 
 describe("Article Header Test", () => {
   it("renders the header with mandatory content and secondary text", () => {
@@ -24,5 +25,11 @@ describe("Article Header Test", () => {
 
     expect(screen.getByTestId("h2-element")).toBeInTheDocument();
     expect(screen.getByTestId("header-image")).toBeInTheDocument();
+  });
+
+  it("renders the header with optional link resource", () => {
+    render(<ArticleHeader data={whatistdd.headerData} />);
+
+    expect(screen.getByTestId("link-resource")).toBeInTheDocument();
   });
 });

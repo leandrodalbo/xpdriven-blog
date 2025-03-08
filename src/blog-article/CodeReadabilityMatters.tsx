@@ -1,23 +1,13 @@
-import readability from "../assets/readability.jpg";
+import { ArticleHeader } from "../article-header/ArticleHeader";
+import { ArticleData } from "../types";
 
-const CodeReadabilityMatters = () => (
+export interface CodeReadabilityMattersProps {
+  data: ArticleData;
+}
+
+const CodeReadabilityMatters = ({ data }: CodeReadabilityMattersProps) => (
   <article className="blog-article">
-    <h1 className="blog-article-h1">
-      Why Code Readability Matters More Than You Think
-    </h1>
-
-    <img
-      src={readability}
-      alt="code-readability"
-      className="blog-article-img"
-    />
-
-    <h2 className="blog-article-h2">The Importance of Writing Readable Code</h2>
-    <p className="blog-article-p">
-      Code readability impacts maintainability, collaboration, and the overall
-      quality of software systems. Writing clean and readable code is the key to
-      keeping productivity and team velocity at a considerable rate.
-    </p>
+    <ArticleHeader data={data.headerData} />
 
     <h4 className="blog-article-h4">Maintainability</h4>
     <p className="blog-article-p">

@@ -15,15 +15,15 @@ export const articles: BlogArticle[] = [
   },
   {
     id: 3,
-    title: "What Is Clean Code? A Beginner’s Guide",
+    title: "Clean Code: A Beginner’s Guide",
   },
   {
     id: 4,
-    title: "Agile Manifesto: What It Means Today",
+    title: "About the Agile Manifesto",
   },
   {
     id: 5,
-    title: "Why Code Readability Matters More Than You Think",
+    title: "Code Readability Matters More Than You Think",
   },
   {
     id: 6,

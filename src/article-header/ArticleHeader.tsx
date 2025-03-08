@@ -33,6 +33,18 @@ export const ArticleHeader = ({ data }: ArticleHeaderProps) => {
           {data.p2}
         </p>
       )}
+
+      {data.linkText && data.linkURL && (
+        <a
+          data-testid="link-resource"
+          href={data.linkURL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="blog-article-a"
+        >
+          {data.linkText}
+        </a>
+      )}
     </header>
   );
 };
