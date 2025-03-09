@@ -36,7 +36,7 @@ body {
 
 @layer components {
   .blog-article {
-    @apply p-4 sm:p-5 md:p-7 bg-gray-800 text-gray-300 rounded-xl shadow-lg w-full max-w-none mx-auto overflow-hidden;
+    @apply p-4 sm:p-5 md:p-7 text-gray-300 rounded-xl shadow-lg h-full w-full max-w-none mx-auto overflow-hidden;
   }
 
   .blog-article-h1 {

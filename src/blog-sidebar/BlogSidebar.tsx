@@ -22,7 +22,7 @@ const BlogSidebar = ({ articles }: BlogSidebarProps) => {
   return (
     <aside
       className={`${isDisplayed ? "w-full md:w-1/4 lg:w-1/5" : "w-12"} 
-                        max-w-xs bg-gray-800 border-r border-yellow-400 p-2 
+                        max-w-xs border-r border-yellow-400 p-2 
                         transition-all duration-300`}
     >
       {!isDisplayed && (
@@ -35,7 +35,7 @@ const BlogSidebar = ({ articles }: BlogSidebarProps) => {
 
       {isDisplayed && (
         <div>
-          <div className="flex items-center bg-gray-700 rounded w-full mb-4">
+          <div className="flex items-center rounded w-full mb-4">
             <FaArrowLeft
               className="text-yellow-300 hover:text-orange-400 text-lg ml-2 cursor-pointer transition duration-300"
               onClick={() => setIsDisplayed(false)}
@@ -44,7 +44,7 @@ const BlogSidebar = ({ articles }: BlogSidebarProps) => {
 
             <input
               type="text"
-              placeholder="Search articles..."
+              placeholder="Search"
               className="p-1 text-pink-300 placeholder-pink-400 bg-gray-700 rounded w-full ml-2 focus:outline-none"
               onChange={(e) => filterArticles(e.target.value)}
             />
