@@ -13,6 +13,22 @@ export interface ArticleHeaderData {
   linkURL?: string;
 }
 
+export interface ArticleSectionData {
+  h4: string;
+  p1?: string;
+  h6?: string;
+  img?: string;
+  linkText?: string;
+  linkURL?: string;
+  ul?: ArticleLIData[];
+}
+
+export interface ArticleLIData {
+  h6: string;
+  p1?: string;
+}
+
 export interface ArticleData {
   headerData: ArticleHeaderData;
+  sectionsData: ArticleSectionData[];
 }

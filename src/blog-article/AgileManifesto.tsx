@@ -1,6 +1,7 @@
 import { ArticleHeader } from "../article-header/ArticleHeader";
-import agileImage from "../assets/agile-manifesto.png";
-import agileWaters from "../assets/agilewaterfall.png";
+
+import { ArticleSection } from "../article-section/ArticleSection";
+
 import { ArticleData } from "../types";
 
 export interface AgileManifestoProps {
@@ -11,63 +12,9 @@ const AgileManifesto = ({ data }: AgileManifestoProps) => (
   <article className="blog-article">
     <ArticleHeader data={data.headerData} />
 
-    <h2 className="blog-article-h2">The Four Core Values of Agile</h2>
-
-    <img src={agileImage} alt="agile-values" className="blog-article-img" />
-
-    <p className="blog-article-p">
-      These values embrace the dynamic nature of software, emphasizing
-      flexibility, collaboration, and continuous improvement. By prioritizing
-      adaptability over rigid planning and heavy processes, they ensure teams
-      can effectively respond to constantly changing environments.
-    </p>
-
-    <h2 className="blog-article-h2">Agile vs. Waterfall: Key Differences</h2>
-
-    <p className="blog-article-p">
-      Being Agile is about delivering value—not just following a process
-    </p>
-
-    <img
-      src={agileWaters}
-      alt="Agile vs. Waterfall Comparison"
-      className="blog-article-img"
-    />
-
-    <h2 className="blog-article-h2">Why Agile Is Often Misused</h2>
-
-    <h4 className="blog-article-h4">1. "Fake Agile" (Agile in Name Only)</h4>
-    <p className="blog-article-p">
-      Some teams say they’re Agile but still follow rigid processes.
-    </p>
-
-    <h4 className="blog-article-h4">2. Over-Focus on Tools</h4>
-    <p className="blog-article-p">
-      Using <strong>Jira</strong> doesn't make you agile.
-    </p>
-
-    <h4 className="blog-article-h4">3. Agile as an Excuse for No Planning</h4>
-    <p className="blog-article-p">
-      Some teams misunderstand Agile as <strong>"no planning"</strong>, leading
-      to chaos.
-    </p>
-
-    <h2 className="blog-article-h2">Become a useful person</h2>
-
-    <a
-      href="https://youtu.be/tedpry-czHw"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="blog-article-a"
-    >
-      Agile Frustrations (Martin Fowler)
-    </a>
-
-    <p className="blog-article-p">
-      Martin Fowler gives a clear explanation about what <strong>Agile</strong>{" "}
-      is about and how developers can become more useful for the business by
-      understanding the domain they are working on.
-    </p>
+    {data.sectionsData.map((it) => (
+      <ArticleSection key={it.h4} data={it} />
+    ))}
 
     <h2 className="blog-article-h2">Conclusion</h2>
     <p className="blog-article-p">

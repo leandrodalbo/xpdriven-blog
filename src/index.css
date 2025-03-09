@@ -48,7 +48,11 @@ body {
   }
 
   .blog-article-h4 {
-    @apply text-base font-semibold mt-6 text-gray-100 break-words;
+    @apply font-semibold mt-8 text-gray-50 break-words;
+  }
+
+  .blog-article-h6 {
+    @apply text-base font-semibold mt-2 text-gray-300 break-words;
   }
 
   .blog-article-p {
