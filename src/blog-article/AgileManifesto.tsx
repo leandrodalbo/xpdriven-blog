@@ -16,7 +16,7 @@ const AgileManifesto = ({ data }: AgileManifestoProps) => (
       <ArticleSection key={it.h4} data={it} />
     ))}
 
-    <h2 className="blog-article-h2">Conclusion</h2>
+    <h4 className="blog-article-h4">Conclusion</h4>
     <p className="blog-article-p">
       Should we go back to 1990s and start writing large documentation that
       nobody reads or understand?

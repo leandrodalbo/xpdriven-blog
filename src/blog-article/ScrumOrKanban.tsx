@@ -1,5 +1,4 @@
-import monkeys from "../assets/monkeyeating.gif";
-
+import monkeydriving from "../assets/monkeydriving.gif";
 const ScrumOrKanban = () => (
   <article className="blog-article">
     <h1 className="blog-article-h1">
@@ -8,7 +7,11 @@ const ScrumOrKanban = () => (
 
     <p className="blog-article-p">This article is just about to be added...</p>
 
-    <img src={monkeys} alt="monkeyeating" className="blog-article-img" />
+    <img
+      src={monkeydriving}
+      alt="monkey-driving"
+      className="blog-article-img"
+    />
   </article>
 );
 

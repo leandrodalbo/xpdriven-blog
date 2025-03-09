@@ -46,7 +46,7 @@ const CodeReadabilityMatters = ({ data }: CodeReadabilityMattersProps) => (
       fresh perspectives.
     </p>
 
-    <h2 className="blog-article-h2">Useful links</h2>
+    <h4 className="blog-article-h4">Useful links</h4>
     <ul className="blog-article-ul">
       <li>
         <a
