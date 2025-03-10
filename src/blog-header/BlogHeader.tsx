@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaSyncAlt, FaYoutube } from "react-icons/fa";
 
 const BlogHeader = () => {
   return (
-    <header className="bg-gray-800 p-4 flex justify-between items-center shadow-md border-b border-yellow-400">
+    <header className="p-4 flex justify-between items-center shadow-md border-b border-yellow-400">
       <a
         href="/"
         className="flex space-x-6 text-2xl md:text-3xl text-yellow-300 hover:text-orange-400 font-bold transition duration-300"

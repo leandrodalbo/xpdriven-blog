@@ -7,10 +7,13 @@ export interface ArticleHeaderProps {
 export const ArticleHeader = ({ data }: ArticleHeaderProps) => {
   return (
     <header>
-      <h1 className="blog-article-h1">{data.h1}</h1>
+      <h1 className={data.h1class || "blog-article-h1"}>{data.h1}</h1>
 
       {data.h2 && (
-        <h2 data-testid="h2-element" className="blog-article-h2">
+        <h2
+          data-testid="h2-element"
+          className={data.h2class || "blog-article-h2"}
+        >
           {data.h2}
         </h2>
       )}
@@ -20,16 +23,19 @@ export const ArticleHeader = ({ data }: ArticleHeaderProps) => {
           data-testid="header-image"
           src={data.img}
           alt="article-header-image"
-          className="blog-article-img"
+          className={data.imgclass || "blog-article-img"}
         />
       )}
 
-      <p data-testid="main-text" className="blog-article-p">
+      <p data-testid="main-text" className={data.p1class || "blog-article-p"}>
         {data.p1}
       </p>
 
       {data.p2 && (
-        <p data-testid="second-text" className="blog-article-p">
+        <p
+          data-testid="second-text"
+          className={data.p2class || "blog-article-p"}
+        >
           {data.p2}
         </p>
       )}
@@ -40,7 +46,7 @@ export const ArticleHeader = ({ data }: ArticleHeaderProps) => {
           href={data.linkURL}
           target="_blank"
           rel="noopener noreferrer"
-          className="blog-article-a"
+          className={data.linkclass || "blog-article-a"}
         >
           {data.linkText}
         </a>

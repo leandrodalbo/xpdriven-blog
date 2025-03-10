@@ -10,7 +10,7 @@ const WhatIsTDD = ({ data }: WhatIsTDDProps) => (
   <article className="blog-article">
     <ArticleHeader data={data.headerData} />
 
-    <h2 className="blog-article-h2">The TDD Cycle</h2>
+    <h4 className="blog-article-h4">The TDD Cycle</h4>
 
     <ul className="blog-article-ul">
       <li>
@@ -26,7 +26,7 @@ const WhatIsTDD = ({ data }: WhatIsTDDProps) => (
       </li>
     </ul>
 
-    <h2 className="blog-article-h2">🛠 Benefits of TDD</h2>
+    <h4 className="blog-article-h4">🛠 Benefits of TDD</h4>
     <ul className="blog-article-ul">
       <li>
         🔍 <strong>Fewer Bugs:</strong> Catch issues early.
@@ -47,7 +47,7 @@ const WhatIsTDD = ({ data }: WhatIsTDDProps) => (
       Let's see TDD in action with Python and Kotlin examples! 🐍 + ☕
     </p>
 
-    <h2 className="blog-article-h2">📝 Example 1: TDD in Python</h2>
+    <h4 className="blog-article-h4">📝 Example 1: TDD in Python</h4>
     <p className="blog-article-p">Step 1: Write a failing test.</p>
     <pre className="blog-article-pre">
       {`
@@ -66,7 +66,7 @@ def add(a, b):
 `}
     </pre>
 
-    <h2 className="blog-article-h2">📝 Example 2: TDD in Kotlin</h2>
+    <h4 className="blog-article-h4">📝 Example 2: TDD in Kotlin</h4>
     <p className="blog-article-p">Step 1: Write a failing test using JUnit.</p>
     <pre className="blog-article-pre">
       {`
@@ -91,7 +91,7 @@ fun add(a: Int, b: Int): Int {
 `}
     </pre>
 
-    <h2 className="blog-article-h2">🤔 Common TDD Concerns</h2>
+    <h4 className="blog-article-h4">🤔 Common TDD Concerns</h4>
     <ul className="blog-article-ul">
       <li>
         <strong>“Writing tests first feels weird.”</strong> 🚀 Reliable software
@@ -107,7 +107,7 @@ fun add(a: Int, b: Int): Int {
       </li>
     </ul>
 
-    <h2 className="blog-article-h2">🔗 Learn More About TDD</h2>
+    <h4 className="blog-article-h4">🔗 Learn More About TDD</h4>
     <ul className="blog-article-ul">
       <li>
         <a

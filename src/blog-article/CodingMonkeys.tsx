@@ -1,6 +1,7 @@
 import { ArticleHeader } from "../article-header/ArticleHeader";
-import monkeydriving from "../assets/monkeydriving.gif";
+
 import { ArticleData } from "../types";
+import monkeys from "../assets/monkeyeating.gif";
 
 export interface CodingMonkeysProps {
   data: ArticleData;
@@ -37,8 +38,8 @@ const CodingMonkeys = ({ data }: CodingMonkeysProps) => (
       picture.
     </p>
 
-    <h2 className="blog-article-h2">Conclusion</h2>
-    <ul className="blog-article-h2">
+    <h4 className="blog-article-h4">Take a look</h4>
+    <ul className="blog-article-ul">
       <li>
         <a
           href="https://www.youtube.com/watch?v=WubVswYg2CE"
@@ -60,12 +61,7 @@ const CodingMonkeys = ({ data }: CodingMonkeysProps) => (
         </a>
       </li>
     </ul>
-
-    <img
-      src={monkeydriving}
-      alt="monkey-driving"
-      className="blog-article-img"
-    />
+    <img src={monkeys} alt="monkeyeating" className="blog-article-img" />
   </article>
 );
 

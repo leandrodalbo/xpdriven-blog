@@ -12,4 +12,5 @@ export const whatiscleancode: ArticleData = {
     linkURL:
       "https://www.reddit.com/r/cscareerquestions/comments/vrdpyu/clean_code_still_good_read/",
   },
+  sectionsData: [],
 };

@@ -11,7 +11,7 @@ export interface WhatIsCleanCodeProps {
 const WhatIsCleanCode = ({ data }: WhatIsCleanCodeProps) => (
   <article className="blog-article">
     <ArticleHeader data={data.headerData} />
-    <h2 className="blog-article-h2">What Is Clean Code?</h2>
+    <h4 className="blog-article-h4">What Is Clean Code?</h4>
     <p className="blog-article-p">
       Clean code is software that’s easy to{" "}
       <strong>read, understand, and maintain</strong>. It follows best
@@ -19,7 +19,7 @@ const WhatIsCleanCode = ({ data }: WhatIsCleanCodeProps) => (
       so clean code ensures it stays adaptable to changing requirements.
     </p>
 
-    <h2 className="blog-article-h2">Why Is Clean Code Important?</h2>
+    <h4 className="blog-article-h4">Why Is Clean Code Important?</h4>
     <ul className="blog-article-ul">
       <li>
         <strong>Easy to add new features</strong> – Well-designed and structured
@@ -35,16 +35,16 @@ const WhatIsCleanCode = ({ data }: WhatIsCleanCodeProps) => (
       </li>
     </ul>
 
-    <h2 className="blog-article-h2">Popular Principles</h2>
+    <h4 className="blog-article-h4">Popular Principles</h4>
 
-    <h4 className="blog-article-h4">1. Keep It Simple (KISS)</h4>
+    <h6 className="blog-article-h6">1. Keep It Simple (KISS)</h6>
 
     <p className="blog-article-p">
       Avoid unnecessary complexity. Code should be as straightforward as
       possible while solving the problem effectively.
     </p>
 
-    <h4 className="blog-article-h4">2. Meaningful Names</h4>
+    <h6 className="blog-article-h6">2. Meaningful Names</h6>
     <pre className="blog-article-pre">
       <code className="blog-article-red-code">
         {`// Bad
@@ -63,21 +63,21 @@ function calculateTax(price: number, taxRate: number): number {
       </code>
     </pre>
 
-    <h4 className="blog-article-h4">
+    <h6 className="blog-article-h6">
       3. Write small, focused routines that produce no side effects.
-    </h4>
+    </h6>
     <p className="blog-article-p">
       Each routines should do <strong>one thing only</strong> and do it well.
     </p>
 
-    <h2 className="blog-article-h2">
+    <h4 className="blog-article-h4">
       Clean Code vs. Quick and Dirty Solutions
-    </h2>
+    </h4>
 
-    <blockquote className="blog-article-quote">
-      "Even bad code can function but if it isn’t clean, it can bring a
-      development organization to its knees..."
-    </blockquote>
+    <p className="blog-article-p">
+      Even bad code can function but if it isn’t clean, it can bring a
+      development organization to its knees...
+    </p>
 
     <img
       src={quickdirty}
@@ -85,7 +85,7 @@ function calculateTax(price: number, taxRate: number): number {
       className="blog-article-img"
     />
 
-    <h2 className="blog-article-h2">Uncle Bob's Definition of Clean Code</h2>
+    <h4 className="blog-article-h4">Uncle Bob's Definition of Clean Code</h4>
     <a
       href="https://www.youtube.com/watch?v=RSrn_6TeeUQ"
       target="_blank"

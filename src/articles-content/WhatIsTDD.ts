@@ -9,4 +9,5 @@ export const whatistdd: ArticleData = {
     linkText: "Kent Beck: The Creator of TDD",
     linkURL: "https://en.wikipedia.org/wiki/Kent_Beck",
   },
+  sectionsData: [],
 };
