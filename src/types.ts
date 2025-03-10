@@ -40,6 +40,8 @@ export interface ArticleLIData {
   h6class?: string;
   p1?: string;
   p1class?: string;
+  preRedCode?: string;
+  preGreenCode?: string;
 }
 
 export interface ArticleData {

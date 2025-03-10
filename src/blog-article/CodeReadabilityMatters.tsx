@@ -3,6 +3,8 @@ import { ArticleSection } from "../article-section/ArticleSection";
 
 import { ArticleData } from "../types";
 
+import monkeys from "../assets/monkeyeating.gif";
+
 export interface CodeReadabilityMattersProps {
   data: ArticleData;
 }
@@ -37,6 +39,7 @@ const CodeReadabilityMatters = ({ data }: CodeReadabilityMattersProps) => (
         </a>
       </li>
     </ul>
+    <img src={monkeys} alt="monkeyeating" className="blog-article-img" />
   </article>
 );
 

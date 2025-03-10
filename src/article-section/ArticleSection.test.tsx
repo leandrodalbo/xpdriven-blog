@@ -4,6 +4,7 @@ import { describe, it, expect } from "vitest";
 import { ArticleSection } from "./ArticleSection";
 
 import { agileManifestoContent } from "../articles-content/AgileManifesto";
+import { whatiscleancode } from "../articles-content/WhatIsCleanCode";
 
 describe("Article Sections Test", () => {
   it("renders agile manifesto first section", () => {
@@ -27,5 +28,12 @@ describe("Article Sections Test", () => {
     expect(screen.getByTestId("section-header")).toBeInTheDocument();
     expect(screen.getByTestId("section-text")).toBeInTheDocument();
     expect(screen.getByTestId("section-link-resource")).toBeInTheDocument();
+  });
+
+  it("renders an article section with pre code", () => {
+    render(<ArticleSection data={whatiscleancode.sectionsData[2]} />);
+
+    expect(screen.getByTestId("section-pre-red")).toBeInTheDocument();
+    expect(screen.getByTestId("section-pre-green")).toBeInTheDocument();
   });
 });
