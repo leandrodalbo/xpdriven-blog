@@ -65,6 +65,23 @@ export const ArticleSection = ({ data }: ArticleSectionProps) => {
                   {it.p1}
                 </p>
               )}
+
+              {it.preRedCode && (
+                <pre data-testid="section-pre-red" className="blog-article-pre">
+                  <code className="blog-article-red-code">{it.preRedCode}</code>
+                </pre>
+              )}
+
+              {it.preGreenCode && (
+                <pre
+                  data-testid="section-pre-green"
+                  className="blog-article-pre"
+                >
+                  <code className="blog-article-green-code">
+                    {it.preGreenCode}
+                  </code>
+                </pre>
+              )}
             </li>
           ))}
         </ul>
