@@ -1,8 +1,8 @@
 import { ArticleHeader } from "../article-header/ArticleHeader";
-
 import { ArticleSection } from "../article-section/ArticleSection";
-
 import { ArticleData } from "../types";
+
+import monkeys from "../assets/monkeyeating.gif";
 
 export interface AgileManifestoProps {
   data: ArticleData;
@@ -21,6 +21,7 @@ const AgileManifesto = ({ data }: AgileManifestoProps) => (
       Should we go back to 1990s and start writing large documentation that
       nobody reads or understand?
     </p>
+    <img src={monkeys} alt="monkeyeating" className="blog-article-img" />
   </article>
 );
 

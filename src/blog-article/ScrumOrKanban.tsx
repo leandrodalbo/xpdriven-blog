@@ -5,7 +5,9 @@ const ScrumOrKanban = () => (
       Scrum vs. Kanban: Which One Should You Choose?
     </h1>
 
-    <p className="blog-article-p">This article is just about to be added...</p>
+    <p className="blog-article-p-center">
+      This article is just about to be added...
+    </p>
 
     <img
       src={monkeydriving}
