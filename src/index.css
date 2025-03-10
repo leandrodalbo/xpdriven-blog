@@ -59,6 +59,10 @@ body {
     @apply text-base leading-relaxed sm:leading-loose text-gray-300 mb-5 mt-4;
   }
 
+  .blog-article-p-center {
+    @apply text-base leading-relaxed sm:leading-loose text-gray-300 mb-5 mt-4 text-center;
+  }
+
   .blog-article-pre {
     @apply bg-gray-900 text-yellow-300 p-3 rounded-md mt-3 text-sm sm:text-base overflow-x-auto whitespace-pre-wrap;
   }

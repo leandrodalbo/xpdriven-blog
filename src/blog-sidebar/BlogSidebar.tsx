@@ -44,7 +44,7 @@ const BlogSidebar = ({ articles }: BlogSidebarProps) => {
 
             <input
               type="text"
-              placeholder="Search"
+              placeholder="search"
               className="p-1 text-pink-300 placeholder-pink-400 bg-gray-700 rounded w-full ml-2 focus:outline-none"
               onChange={(e) => filterArticles(e.target.value)}
             />

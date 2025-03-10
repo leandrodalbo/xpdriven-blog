@@ -38,7 +38,7 @@ const CodingMonkeys = ({ data }: CodingMonkeysProps) => (
       picture.
     </p>
 
-    <h4 className="blog-article-h4">Conclusion</h4>
+    <h4 className="blog-article-h4">Take a look</h4>
     <ul className="blog-article-ul">
       <li>
         <a
