@@ -1,6 +1,8 @@
 import { ArticleHeader } from "../article-header/ArticleHeader";
+import { ArticleSection } from "../article-section/ArticleSection";
 
 import { ArticleData } from "../types";
+import monkeys from "../assets/monkeyeating.gif";
 
 export interface WhatIsTDDProps {
   data: ArticleData;
@@ -9,103 +11,9 @@ export interface WhatIsTDDProps {
 const WhatIsTDD = ({ data }: WhatIsTDDProps) => (
   <article className="blog-article">
     <ArticleHeader data={data.headerData} />
-
-    <h4 className="blog-article-h4">The TDD Cycle</h4>
-
-    <ul className="blog-article-ul">
-      <li>
-        <strong className="text-red-400">Red:</strong> Write a failing test.
-      </li>
-      <li>
-        <strong className="text-green-400">Green:</strong> Implement just enough
-        code to pass.
-      </li>
-      <li>
-        <strong className="text-blue-400">Refactor:</strong> Improve the code
-        while keeping tests passing.
-      </li>
-    </ul>
-
-    <h4 className="blog-article-h4">🛠 Benefits of TDD</h4>
-    <ul className="blog-article-ul">
-      <li>
-        🔍 <strong>Fewer Bugs:</strong> Catch issues early.
-      </li>
-      <li>
-        ⚡ <strong>Faster Debugging:</strong> Reduce debugging time.
-      </li>
-      <li>
-        📏 <strong>Better Design:</strong> Encourages modular and flexible code.
-      </li>
-      <li>
-        🚀 <strong>More Confidence:</strong> Refactor code without fear of
-        breaking it.
-      </li>
-    </ul>
-
-    <p className="blog-article-p">
-      Let's see TDD in action with Python and Kotlin examples! 🐍 + ☕
-    </p>
-
-    <h4 className="blog-article-h4">📝 Example 1: TDD in Python</h4>
-    <p className="blog-article-p">Step 1: Write a failing test.</p>
-    <pre className="blog-article-pre">
-      {`
-import pytest
-
-def test_add():
-    assert add(2, 3) == 5  # This test will fail since 'add' is undefined
-`}
-    </pre>
-
-    <p className="blog-article-p">Step 2: Implement the function.</p>
-    <pre className="blog-article-pre">
-      {`
-def add(a, b):
-    return a + b
-`}
-    </pre>
-
-    <h4 className="blog-article-h4">📝 Example 2: TDD in Kotlin</h4>
-    <p className="blog-article-p">Step 1: Write a failing test using JUnit.</p>
-    <pre className="blog-article-pre">
-      {`
-import org.junit.Test
-import kotlin.test.assertEquals
-
-class CalculatorTest {
-    @Test
-    fun testAddition() {
-        assertEquals(5, add(2, 3))  // This test will fail initially
-    }
-}
-`}
-    </pre>
-
-    <p className="blog-article-p">Step 2: Implement the function.</p>
-    <pre className="blog-article-pre">
-      {`
-fun add(a: Int, b: Int): Int {
-    return a + b
-}
-`}
-    </pre>
-
-    <h4 className="blog-article-h4">🤔 Common TDD Concerns</h4>
-    <ul className="blog-article-ul">
-      <li>
-        <strong>“Writing tests first feels weird.”</strong> 🚀 Reliable software
-        is the goal.
-      </li>
-      <li>
-        <strong>“TDD slows me down.”</strong> ⚡ “The only way to go fast is to
-        go well.” – Robert C. Martin
-      </li>
-      <li>
-        <strong>“Not all code is testable.”</strong> 🛠 If it's hard to test,
-        it's often too complex.
-      </li>
-    </ul>
+    {data.sectionsData.map((it) => (
+      <ArticleSection key={it.h4} data={it} />
+    ))}
 
     <h4 className="blog-article-h4">🔗 Learn More About TDD</h4>
     <ul className="blog-article-ul">
@@ -139,17 +47,8 @@ fun add(a: Int, b: Int): Int {
           TDD in IntelliJ IDEA
         </a>
       </li>
-      <li>
-        <a
-          href="https://docs.pytest.org/en/latest/"
-          className="text-blue-400"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          pytest Documentation
-        </a>
-      </li>
     </ul>
+    <img src={monkeys} alt="monkeyeating" className="blog-article-img" />
   </article>
 );
 
