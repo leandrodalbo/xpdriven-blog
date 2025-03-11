@@ -55,6 +55,14 @@ body {
     @apply text-base sm:text-lg font-medium mt-3 text-gray-300 break-words;
   }
 
+  .blog-article-h6-red {
+    @apply text-base sm:text-lg font-medium mt-3 text-red-300 break-words;
+  }
+
+  .blog-article-h6-green {
+    @apply text-base sm:text-lg font-medium mt-3 text-green-300 break-words;
+  }
+
   .blog-article-p {
     @apply text-base leading-relaxed sm:leading-loose text-gray-300 mb-5 mt-4;
   }
