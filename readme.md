@@ -2,6 +2,9 @@
 
 A simple blog built with **React, Vite, TypeScript, TailwindCSS, and React Router**. It features a sidebar with article links, a search bar, and dynamic routing.
 
+[xpdriven.blog](https://xpdriven.blog/)
+
+
 ## 📌 Features
 - 📖 List of articles in the sidebar  
 - 🔍 Search bar for quick article lookup  
