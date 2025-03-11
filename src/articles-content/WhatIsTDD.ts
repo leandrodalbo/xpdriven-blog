@@ -45,7 +45,7 @@ export const whatistdd: ArticleData = {
           p1: "Encourages modular and flexible code that is easy to change over time.",
         },
         {
-          h6: "3. More Confidence",
+          h6: "4. More Confidence",
           p1: "Refactoring code without fear of breaking it will help you to do a better job.",
         },
       ],
