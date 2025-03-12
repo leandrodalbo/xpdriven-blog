@@ -59,4 +59,11 @@ export const agileManifestoContent: ArticleData = {
       linkText: "Agile Frustrations (Martin Fowler)",
     },
   ],
+
+  footerData: {
+    h4: "Conclusion",
+    p1: `
+    Should we go back to 1990s and start writing large documentation that nobody reads or understand?
+    `,
+  },
 };
