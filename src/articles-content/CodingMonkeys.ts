@@ -42,12 +42,5 @@ export const codingMonkeysContent: ArticleData = {
       picture.
       `,
     },
-    {
-      h4: "Maintainability",
-      p1: `
-      If our code is easy to follow, we can identify and fix problems more
-      efficiently, making your product more reliable.
-      `,
-    },
   ],
 };
