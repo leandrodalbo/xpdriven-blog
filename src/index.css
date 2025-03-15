@@ -35,6 +35,17 @@ body {
 }
 
 @layer components {
+  .blog-header {
+    @apply p-4 flex justify-between items-center shadow-md border-b border-yellow-400;
+  }
+  .header-social-link {
+    @apply text-pink-300 hover:text-yellow-300 transform hover:scale-110 transition duration-300 text-2xl;
+  }
+
+  .header-logo {
+    @apply flex space-x-6 text-2xl md:text-3xl text-yellow-300 hover:text-orange-400 font-bold transition duration-300;
+  }
+
   .blog-article {
     @apply p-4 sm:p-5 md:p-7 text-gray-300 rounded-xl shadow-lg h-full w-full max-w-none mx-auto overflow-hidden;
   }
