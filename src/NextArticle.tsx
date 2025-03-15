@@ -1,9 +1,8 @@
-import monkeydriving from "../assets/monkeydriving.gif";
-const ScrumOrKanban = () => (
+import monkeydriving from "./assets/monkeydriving.gif";
+
+const NextArticle = () => (
   <article className="blog-article">
-    <h1 className="blog-article-h1">
-      Scrum vs. Kanban: Which One Should You Choose?
-    </h1>
+    <h1 className="blog-article-h1">Next Article: Scrum vs. Kanban</h1>
 
     <p className="blog-article-p-center">
       This article is just about to be added...
@@ -17,4 +16,4 @@ const ScrumOrKanban = () => (
   </article>
 );
 
-export default ScrumOrKanban;
+export default NextArticle;

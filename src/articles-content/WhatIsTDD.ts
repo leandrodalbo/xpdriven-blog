@@ -98,4 +98,23 @@ fun add(a: Int, b: Int): Int {
       ],
     },
   ],
+
+  footerData: {
+    h4: "🔗 Learn More About TDD",
+    ul: [
+      {
+        linkText: "Did Kent Beck REALLY Invent TDD?",
+        linkURL: "https://www.youtube.com/watch?v=x1O5cKCAgdk",
+      },
+      {
+        linkText: "Coding Monkeys (Martin Fowler)",
+        linkURL: "https://martinfowler.com/bliki/TestDrivenDevelopment.html",
+      },
+      {
+        linkText: "TDD in IntelliJ IDEA",
+        linkURL:
+          "https://www.jetbrains.com/help/idea/tdd-with-intellij-idea.html",
+      },
+    ],
+  },
 };

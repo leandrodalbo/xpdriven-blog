@@ -3,20 +3,20 @@ import { ArticleHeader } from "../article-header/ArticleHeader";
 import { ArticleSection } from "../article-section/ArticleSection";
 import { ArticleData } from "../types";
 
-export interface AgileManifestoProps {
+export interface BlogArticleProps {
   data: ArticleData;
 }
 
-const AgileManifesto = ({ data }: AgileManifestoProps) => (
+export const BlogArticle = ({ data }: BlogArticleProps) => (
   <article className="blog-article">
     <ArticleHeader data={data.headerData} />
 
-    {data.sectionsData.map((it) => (
-      <ArticleSection key={it.h4} data={it} />
-    ))}
+    <div data-testid="article-sections">
+      {data.sectionsData.map((it) => (
+        <ArticleSection key={it.h4} data={it} />
+      ))}
+    </div>
 
-    <ArticleFooter data={data.footerData} />
+    <ArticleFooter data-testId="article-footer" data={data.footerData} />
   </article>
 );
-
-export default AgileManifesto;

@@ -6,7 +6,7 @@ export interface ArticleHeaderProps {
 
 export const ArticleHeader = ({ data }: ArticleHeaderProps) => {
   return (
-    <header>
+    <header data-testid="article-header">
       <h1 className={data.h1class || "blog-article-h1"}>{data.h1}</h1>
 
       {data.h2 && (

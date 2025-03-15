@@ -7,7 +7,7 @@ export interface ArticleFooterProps {
 
 export const ArticleFooter = ({ data }: ArticleFooterProps) => {
   return (
-    <footer>
+    <footer data-testid="article-footer">
       <h4 className={data.h4class || "blog-article-h4"}>{data.h4}</h4>
 
       {data.p1 && (

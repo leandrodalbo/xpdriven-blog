@@ -43,4 +43,17 @@ export const codingMonkeysContent: ArticleData = {
       `,
     },
   ],
+  footerData: {
+    h4: "Take a look",
+    ul: [
+      {
+        linkText: "The end of programmers",
+        linkURL: "https://www.youtube.com/watch?v=WubVswYg2CE",
+      },
+      {
+        linkText: "Coding Monkeys (Martin Fowler)",
+        linkURL: "https://www.youtube.com/watch?v=S_5nl1uJ8bg",
+      },
+    ],
+  },
 };

@@ -56,4 +56,18 @@ export const codeReadabilityMatters: ArticleData = {
       `,
     },
   ],
+
+  footerData: {
+    h4: "Useful links",
+    ul: [
+      {
+        linkText: "Martin Fowler on Pair Programming",
+        linkURL: "https://martinfowler.com/articles/on-pair-programming.html",
+      },
+      {
+        linkText: "Why are programmers slow?",
+        linkURL: "https://youtu.be/MFsbcQmMJyM",
+      },
+    ],
+  },
 };
