@@ -5,7 +5,7 @@ import { codeReadabilityMatters } from "../../assets/articles-content/CodeReadab
 import { introContent } from "../../assets/articles-content/Intro";
 import { whatistdd } from "../../assets/articles-content/WhatIsTDD";
 import { whatiscleancode } from "../../assets/articles-content/WhatIsCleanCode";
-import { BlogArticle } from "../../blog-article/BlogArticle";
+import { BlogArticle } from "../../blog-components/blog-article/BlogArticle";
 
 const articleSelector: Record<number, () => JSX.Element> = {
   0: () => <BlogArticle data={codingMonkeysContent} />,

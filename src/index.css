@@ -38,6 +38,7 @@ body {
   .blog-header {
     @apply p-4 flex justify-between items-center shadow-md border-b border-yellow-400;
   }
+
   .header-social-link {
     @apply text-pink-300 hover:text-yellow-300 transform hover:scale-110 transition duration-300 text-2xl;
   }
