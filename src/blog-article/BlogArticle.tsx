@@ -1,7 +1,7 @@
-import { ArticleFooter } from "../article-footer/ArticleFooter";
-import { ArticleHeader } from "../article-header/ArticleHeader";
-import { ArticleSection } from "../article-section/ArticleSection";
-import { ArticleData } from "../types";
+import { ArticleFooter } from "../article-components/article-footer/ArticleFooter";
+import { ArticleHeader } from "../article-components/article-header/ArticleHeader";
+import { ArticleSection } from "../article-components/article-section/ArticleSection";
+import { ArticleData } from "../types/types";
 
 export interface BlogArticleProps {
   data: ArticleData;
