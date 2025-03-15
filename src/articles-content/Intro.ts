@@ -40,4 +40,12 @@ export const introContent: ArticleData = {
       `,
     },
   ],
+
+  footerData: {
+    h4: "Conclusion",
+    p1: `
+    By following these practices, you'll become a better developer, creating
+    software that is more scalable, maintainable, and easier to improve over time.
+    `,
+  },
 };

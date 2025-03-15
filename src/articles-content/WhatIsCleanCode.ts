@@ -73,4 +73,9 @@ function calculateTax(price: number, taxRate: number): number {
       img: quickdirty,
     },
   ],
+  footerData: {
+    h4: "Uncle Bob's Definition of Clean Code",
+    linkText: "What is Clean Code?",
+    linkURL: "https://www.youtube.com/watch?v=RSrn_6TeeUQ",
+  },
 };

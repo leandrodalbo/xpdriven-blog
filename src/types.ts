@@ -35,6 +35,20 @@ export interface ArticleSectionData {
   ulclass?: string;
 }
 
+export interface ArticleFooterData {
+  h4: string;
+  h4class?: string;
+  p1?: string;
+  p1class?: string;
+  img?: string;
+  imgclass?: string;
+  linkText?: string;
+  linkURL?: string;
+  linkclass?: string;
+  ul?: ArticleFooterLIData[];
+  ulclass?: string;
+}
+
 export interface ArticleLIData {
   h6: string;
   h6class?: string;
@@ -44,7 +58,14 @@ export interface ArticleLIData {
   preGreenCode?: string;
 }
 
+export interface ArticleFooterLIData {
+  linkText: string;
+  linkURL: string;
+  linkclass?: string;
+}
+
 export interface ArticleData {
   headerData: ArticleHeaderData;
   sectionsData: ArticleSectionData[];
+  footerData: ArticleFooterData;
 }

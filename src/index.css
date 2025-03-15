@@ -92,6 +92,6 @@ body {
   }
 
   .blog-article-ul {
-    @apply list-disc list-inside text-gray-400 mt-4 space-y-2 pl-4;
+    @apply list-disc list-inside text-gray-400 mt-4 space-y-2 pl-0;
   }
 }

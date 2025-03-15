@@ -27,6 +27,6 @@ export const articles: BlogArticle[] = [
   },
   {
     id: 6,
-    title: "Scrum vs. Kanban: Which One Should You Choose?",
+    title: "Scrum vs. Kanban",
   },
 ];
