@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaSyncAlt } from "react-icons/fa";
 import { BlogArticle } from "../types";
 
 interface BlogSidebarProps {
@@ -19,34 +19,38 @@ const BlogSidebar = ({ articles }: BlogSidebarProps) => {
     setArticlesList(withTitle);
   };
 
+  const onCycleClick = (isDisplayedValue: boolean) => {
+    setIsDisplayed(isDisplayedValue);
+    setArticlesList(articles);
+  };
+
   return (
     <aside
-      className={`${isDisplayed ? "w-full md:w-1/4 lg:w-1/5" : "w-12"} 
-                        max-w-xs border-r border-yellow-400 p-2 
-                        transition-all duration-300`}
+      className={`${
+        isDisplayed ? "sidebar-displayed" : "sidebar-not-displayed"
+      } sidebar`}
     >
       {!isDisplayed && (
-        <FaArrowRight
-          className="text-yellow-300 hover:text-orange-400 text-lg ml-2 cursor-pointer transition duration-300"
-          onClick={() => setIsDisplayed(true)}
-          data-testid="arrow-right"
+        <FaSyncAlt
+          className="animate-spin-color"
+          onClick={() => onCycleClick(true)}
+          data-testid="tdd-cycle"
         />
       )}
 
       {isDisplayed && (
         <div>
-          <div className="flex items-center rounded w-full mb-4">
-            <FaArrowLeft
-              className="text-yellow-300 hover:text-orange-400 text-lg ml-2 cursor-pointer transition duration-300"
-              onClick={() => setIsDisplayed(false)}
-              data-testid="arrow-left"
-            />
-
+          <div className="sidebar-search-box">
             <input
               type="text"
               placeholder="search"
-              className="p-1 text-pink-300 placeholder-pink-400 bg-gray-700 rounded w-full ml-2 focus:outline-none"
+              className="sidebar-search-box-input"
               onChange={(e) => filterArticles(e.target.value)}
+            />
+            <FaSyncAlt
+              className="animate-spin-color"
+              onClick={() => onCycleClick(false)}
+              data-testid="tdd-cycle"
             />
           </div>
 
@@ -55,7 +59,7 @@ const BlogSidebar = ({ articles }: BlogSidebarProps) => {
               <li key={article.id} className="mb-4">
                 <Link
                   to={`/article/${article.id}`}
-                  className="text-yellow-300 hover:text-orange-400 transition duration-300"
+                  className="sidebar-article-link"
                 >
                   {article.title}
                 </Link>

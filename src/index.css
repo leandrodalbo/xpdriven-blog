@@ -46,6 +46,38 @@ body {
     @apply flex space-x-6 text-2xl md:text-3xl text-yellow-300 hover:text-orange-400 font-bold transition duration-300;
   }
 
+  .blog-footer {
+    @apply border-t border-yellow-400 p-4 text-center;
+  }
+
+  .bloog-footer-text {
+    @apply text-yellow-300 hover:text-orange-400 transition duration-300;
+  }
+
+  .sidebar {
+    @apply max-w-xs border-r border-yellow-400 p-2 transition-all duration-300;
+  }
+
+  .sidebar-search-box {
+    @apply flex items-center rounded w-full mb-4 gap-2;
+  }
+
+  .sidebar-search-box-input {
+    @apply p-1 text-pink-300 placeholder-pink-400 bg-gray-700 rounded w-full ml-0 focus:outline-none;
+  }
+
+  .sidebar-article-link {
+    @apply text-yellow-300 hover:text-orange-400 transition duration-300;
+  }
+
+  .sidebar-displayed {
+    @apply w-full md:w-1/4 lg:w-1/5;
+  }
+
+  .sidebar-not-displayed {
+    @apply w-12;
+  }
+
   .blog-article {
     @apply p-4 sm:p-5 md:p-7 text-gray-300 rounded-xl shadow-lg h-full w-full max-w-none mx-auto overflow-hidden;
   }

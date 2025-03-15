@@ -5,6 +5,7 @@ import BlogFooter from "../blog-footer/BlogFooter";
 import { articles } from "../blog-articles";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { headerContent } from "../general-content/header-content";
+import { footerContent } from "../general-content/footer-content";
 
 export const App = () => {
   return (
@@ -20,7 +21,7 @@ export const App = () => {
             </Routes>
           </main>
         </div>
-        <BlogFooter />
+        <BlogFooter data={footerContent} />
       </div>
     </Router>
   );
