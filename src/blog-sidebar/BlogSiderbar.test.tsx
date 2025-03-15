@@ -17,10 +17,10 @@ describe("BlogSidebar Tests", () => {
     );
   });
 
-  it("expands the sidebar when clicking the right arrow", () => {
-    const sidebarArrow = screen.getByTestId("arrow-right");
+  it("expands the sidebar when clicking the tdd cycle", () => {
+    const tddCycle = screen.getByTestId("tdd-cycle");
 
-    fireEvent.click(sidebarArrow);
+    fireEvent.click(tddCycle);
 
     expect(screen.queryByPlaceholderText("search")).toBeInTheDocument();
     expect(screen.getByText("React Testing Guide")).toBeInTheDocument();
@@ -28,9 +28,9 @@ describe("BlogSidebar Tests", () => {
   });
 
   it("filters articles based on search input", () => {
-    const sidebarArrow = screen.getByTestId("arrow-right");
+    const tddCycle = screen.getByTestId("tdd-cycle");
 
-    fireEvent.click(sidebarArrow);
+    fireEvent.click(tddCycle);
     const searchInput = screen.getByPlaceholderText("search");
 
     fireEvent.change(searchInput, { target: { value: "React" } });
@@ -41,13 +41,15 @@ describe("BlogSidebar Tests", () => {
     ).not.toBeInTheDocument();
   });
 
-  it("hide the sidebar when clicking the left arrow", async () => {
-    const sidebarArrow = screen.getByTestId("arrow-right");
-    fireEvent.click(sidebarArrow);
+  it("hide the sidebar when clicking the tdd cycle", async () => {
+    const tddCycle = screen.getByTestId("tdd-cycle");
+    fireEvent.click(tddCycle);
 
-    expect(screen.getByTestId("arrow-left")).toBeInTheDocument();
+    expect(screen.getByTestId("tdd-cycle")).toBeInTheDocument();
 
-    fireEvent.click(screen.getByTestId("arrow-left"));
-    expect(screen.getByTestId("arrow-right")).toBeInTheDocument();
+    fireEvent.click(screen.getByTestId("tdd-cycle"));
+    expect(
+      screen.queryByText("Introduction to Vitest")
+    ).not.toBeInTheDocument();
   });
 });

@@ -8,8 +8,6 @@ const BlogHeader = ({ data }: BlogHeaderProps) => {
   return (
     <header className="blog-header">
       <a href="/" className="header-logo">
-        {<data.blogIcon className="animate-spin-color" />}
-
         <span>{data.blogName}</span>
       </a>
 

@@ -74,11 +74,14 @@ export interface ArticleData {
 
 export interface BlogHeaderContent {
   blogName: string;
-  blogIcon: IconType;
   socialLinks: Social[];
 }
 
 export interface Social {
   url: string;
   socialIcon: IconType;
+}
+
+export interface BlogFooterContent {
+  text: string;
 }
