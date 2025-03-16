@@ -17,7 +17,7 @@ describe("BlogMenu Tests", () => {
     );
   });
 
-  it("expands the sidebar when clicking the tdd cycle", () => {
+  it("expands the menu when clicking the tdd cycle", () => {
     const tddCycle = screen.getByTestId("tdd-cycle");
 
     fireEvent.click(tddCycle);
@@ -41,13 +41,24 @@ describe("BlogMenu Tests", () => {
     ).not.toBeInTheDocument();
   });
 
-  it("hide the sidebar when clicking the tdd cycle", async () => {
+  it("hide the menu when clicking the tdd cycle", async () => {
     const tddCycle = screen.getByTestId("tdd-cycle");
     fireEvent.click(tddCycle);
 
-    expect(screen.getByTestId("tdd-cycle")).toBeInTheDocument();
+    expect(screen.getByTestId("articles-menu")).toBeInTheDocument();
 
     fireEvent.click(screen.getByTestId("tdd-cycle"));
+    expect(
+      screen.queryByText("Introduction to Vitest")
+    ).not.toBeInTheDocument();
+  });
+
+  it("hide the menu when an article is selected", async () => {
+    const tddCycle = screen.getByTestId("tdd-cycle");
+    fireEvent.click(tddCycle);
+    expect(screen.getByTestId("articles-menu")).toBeInTheDocument();
+
+    fireEvent.click(screen.getByTestId("article-1"));
     expect(
       screen.queryByText("Introduction to Vitest")
     ).not.toBeInTheDocument();
