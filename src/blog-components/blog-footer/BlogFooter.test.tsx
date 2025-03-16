@@ -18,4 +18,30 @@ describe("BlogFooter Test", () => {
       screen.getByText(new RegExp(currentYear.toString(), "i"))
     ).toBeInTheDocument();
   });
+
+  it("renders the social links", () => {
+    render(<BlogFooter data={footerContent} />);
+
+    const links = screen.getAllByRole("link");
+
+    expect(
+      links.some(
+        (link) =>
+          link.getAttribute("href") === "https://www.youtube.com/@xpdrivenblog"
+      )
+    ).toBe(true);
+
+    expect(
+      links.some(
+        (link) =>
+          link.getAttribute("href") === "https://github.com/leandrodalbo"
+      )
+    ).toBe(true);
+
+    expect(
+      links.some(
+        (link) => link.getAttribute("href") === "https://x.com/xpdrivenblog"
+      )
+    ).toBe(true);
+  });
 });

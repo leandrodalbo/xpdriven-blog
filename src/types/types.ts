@@ -75,7 +75,7 @@ export interface ArticleData {
 
 export interface BlogHeaderContent {
   blogName: string;
-  socialLinks: Social[];
+  articles: BlogArticle[];
 }
 
 export interface Social {
@@ -85,4 +85,5 @@ export interface Social {
 
 export interface BlogFooterContent {
   text: string;
+  socialLinks: Social[];
 }

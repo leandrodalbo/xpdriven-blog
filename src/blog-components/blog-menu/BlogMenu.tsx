@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
-import { FaSyncAlt } from "react-icons/fa";
 import { BlogArticle } from "../../types/types";
+import { FaSyncAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-interface BlogSidebarProps {
+export interface BlogMenuProps {
   articles: BlogArticle[];
 }
 
-const BlogSidebar = ({ articles }: BlogSidebarProps) => {
+export const BlogMenu = ({ articles }: BlogMenuProps) => {
   const [articlesList, setArticlesList] = useState(articles);
   const [isDisplayed, setIsDisplayed] = useState(false);
 
@@ -25,41 +25,30 @@ const BlogSidebar = ({ articles }: BlogSidebarProps) => {
   };
 
   return (
-    <aside
-      className={`${
-        isDisplayed ? "sidebar-displayed" : "sidebar-not-displayed"
-      } sidebar`}
-    >
-      {!isDisplayed && (
-        <FaSyncAlt
-          className="animate-spin-color"
-          onClick={() => onCycleClick(true)}
-          data-testid="tdd-cycle"
-        />
-      )}
+    <div data-testid="blog-menu">
+      <FaSyncAlt
+        className="animate-spin-color menu "
+        onClick={() => onCycleClick(!isDisplayed)}
+        data-testid="tdd-cycle"
+      />
 
       {isDisplayed && (
-        <div>
-          <div className="sidebar-search-box">
+        <div className="menu-displayed">
+          <div className="menu-search-box">
             <input
               type="text"
               placeholder="search"
-              className="sidebar-search-box-input"
+              className="menu-search-box-input"
               onChange={(e) => filterArticles(e.target.value)}
-            />
-            <FaSyncAlt
-              className="animate-spin-color"
-              onClick={() => onCycleClick(false)}
-              data-testid="tdd-cycle"
             />
           </div>
 
-          <ul>
+          <ul className="mt-8 overflow-auto">
             {articlesList.map((article) => (
               <li key={article.id} className="mb-4">
                 <Link
                   to={`/article/${article.id}`}
-                  className="sidebar-article-link"
+                  className="menu-article-link"
                 >
                   {article.title}
                 </Link>
@@ -68,8 +57,6 @@ const BlogSidebar = ({ articles }: BlogSidebarProps) => {
           </ul>
         </div>
       )}
-    </aside>
+    </div>
   );
 };
-
-export default BlogSidebar;

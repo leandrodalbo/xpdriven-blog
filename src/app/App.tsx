@@ -1,8 +1,6 @@
 import BlogHeader from "../blog-components/blog-header/BlogHeader";
-import BlogSidebar from "../blog-components/blog-sidebar/BlogSidebar";
 import ArticlePage from "../article-components/article-page/ArticlePage";
 import BlogFooter from "../blog-components/blog-footer/BlogFooter";
-import { articles } from "../assets/blog-articles";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { headerContent } from "../assets/general-content/header-content";
 import { footerContent } from "../assets/general-content/footer-content";
@@ -13,7 +11,6 @@ export const App = () => {
       <div className="flex flex-col min-h-screen bg-[#121826]">
         <BlogHeader data={headerContent} />
         <div className="flex flex-1">
-          <BlogSidebar articles={articles} />
           <main className="flex-1 p-6">
             <Routes>
               <Route path="/" element={<ArticlePage />} />

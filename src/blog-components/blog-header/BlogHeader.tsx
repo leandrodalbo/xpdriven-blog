@@ -1,4 +1,5 @@
 import { BlogHeaderContent } from "../../types/types";
+import { BlogMenu } from "../blog-menu/BlogMenu";
 
 export interface BlogHeaderProps {
   data: BlogHeaderContent;
@@ -11,19 +12,7 @@ const BlogHeader = ({ data }: BlogHeaderProps) => {
         <span>{data.blogName}</span>
       </a>
 
-      <nav className="flex space-x-6">
-        {data.socialLinks.map((headerItem) => (
-          <a
-            key={headerItem.url}
-            href={headerItem.url}
-            className="header-social-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <headerItem.socialIcon />
-          </a>
-        ))}
-      </nav>
+      <BlogMenu articles={data.articles} />
     </header>
   );
 };
