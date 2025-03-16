@@ -1,18 +1,18 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import { describe, it, expect, beforeEach } from "vitest";
-import BlogSidebar from "../blog-sidebar/BlogSidebar";
+import { BlogMenu } from "./BlogMenu";
 
 const mockArticles = [
   { id: 1, title: "React Testing Guide" },
   { id: 2, title: "Introduction to Vitest" },
 ];
 
-describe("BlogSidebar Tests", () => {
+describe("BlogMenu Tests", () => {
   beforeEach(() => {
     render(
       <BrowserRouter>
-        <BlogSidebar articles={mockArticles} />
+        <BlogMenu articles={mockArticles} />
       </BrowserRouter>
     );
   });

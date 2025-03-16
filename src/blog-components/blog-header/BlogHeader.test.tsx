@@ -16,29 +16,8 @@ describe("BlogHeader Tests", () => {
     ).toHaveAttribute("href", "/");
   });
 
-  it("renders the links to Linkedin and Github", () => {
+  it("contains a The blog menu", () => {
     render(<BlogHeader data={headerContent} />);
-
-    const links = screen.getAllByRole("link");
-
-    expect(
-      links.some(
-        (link) =>
-          link.getAttribute("href") === "https://www.youtube.com/@xpdrivenblog"
-      )
-    ).toBe(true);
-
-    expect(
-      links.some(
-        (link) =>
-          link.getAttribute("href") === "https://github.com/leandrodalbo"
-      )
-    ).toBe(true);
-
-    expect(
-      links.some(
-        (link) => link.getAttribute("href") === "https://x.com/xpdrivenblog"
-      )
-    ).toBe(true);
+    expect(screen.getByTestId("blog-menu")).toBeInTheDocument();
   });
 });

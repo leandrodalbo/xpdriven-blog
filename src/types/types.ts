@@ -3,6 +3,7 @@ import { IconType } from "react-icons";
 export interface BlogArticle {
   id: number;
   title: string;
+  data: ArticleData;
 }
 
 export interface ArticleHeaderData {
@@ -74,7 +75,7 @@ export interface ArticleData {
 
 export interface BlogHeaderContent {
   blogName: string;
-  socialLinks: Social[];
+  articles: BlogArticle[];
 }
 
 export interface Social {
@@ -84,4 +85,5 @@ export interface Social {
 
 export interface BlogFooterContent {
   text: string;
+  socialLinks: Social[];
 }

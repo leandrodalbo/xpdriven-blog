@@ -11,7 +11,7 @@ const ArticlePage = () => {
     return isNaN(selectedId) || selectedId >= articles.length ? 0 : selectedId;
   };
 
-  return articleSelector[articleId()]();
+  return articleSelector(articleId());
 };
 
 export default ArticlePage;

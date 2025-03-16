@@ -1,12 +1,13 @@
 import monkeydriving from "../assets/images/monkeydriving.gif";
+import { ArticleData } from "../types/types";
+import { ArticleHeader } from "./article-header/ArticleHeader";
 
-const NextArticle = () => (
+export interface NextArticleProps {
+  data: ArticleData;
+}
+const NextArticle = ({ data }: NextArticleProps) => (
   <article className="blog-article">
-    <h1 className="blog-article-h1">Next Article: Scrum vs. Kanban</h1>
-
-    <p className="blog-article-p-center">
-      This article is just about to be added...
-    </p>
+    <ArticleHeader data={data.headerData} />
 
     <img
       src={monkeydriving}
