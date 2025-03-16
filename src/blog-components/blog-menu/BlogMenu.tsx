@@ -33,7 +33,7 @@ export const BlogMenu = ({ articles }: BlogMenuProps) => {
       />
 
       {isDisplayed && (
-        <div className="menu-displayed">
+        <div className="menu-displayed" data-testid="articles-menu">
           <div className="menu-search-box">
             <input
               type="text"
@@ -47,8 +47,10 @@ export const BlogMenu = ({ articles }: BlogMenuProps) => {
             {articlesList.map((article) => (
               <li key={article.id} className="mb-4">
                 <Link
+                  data-testid={`article-${article.id}`}
                   to={`/article/${article.id}`}
                   className="menu-article-link"
+                  onClick={() => onCycleClick(!isDisplayed)}
                 >
                   {article.title}
                 </Link>
