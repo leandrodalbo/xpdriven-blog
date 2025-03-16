@@ -27,7 +27,7 @@ describe("ArticlePage Tests", () => {
   });
 
   it("renders the correct article based on a valid ID", () => {
-    (reactRouterDom.useParams as vi.Mock).mockReturnValue({ id: "1" });
+    (reactRouterDom.useParams as vi.Mock).mockReturnValue({ id: "0" });
 
     renderWithRouter();
 
@@ -36,19 +36,23 @@ describe("ArticlePage Tests", () => {
     ).toBeInTheDocument();
   });
 
-  it("renders Coding Monkeys on non number article id", () => {
+  it("renders Intro on non number article id", () => {
     (reactRouterDom.useParams as vi.Mock).mockReturnValue({ id: "abc" });
 
     renderWithRouter();
 
-    expect(screen.getByText("Coding Monkeys")).toBeInTheDocument();
+    expect(
+      screen.getByText("Welcome to the XPDriven Blog")
+    ).toBeInTheDocument();
   });
 
-  it("renders Coding Monkeys on invalid article id", () => {
+  it("renders Intro on invalid article id", () => {
     (reactRouterDom.useParams as vi.Mock).mockReturnValue({ id: "3535" });
 
     renderWithRouter();
 
-    expect(screen.getByText("Coding Monkeys")).toBeInTheDocument();
+    expect(
+      screen.getByText("Welcome to the XPDriven Blog")
+    ).toBeInTheDocument();
   });
 });

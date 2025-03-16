@@ -3,6 +3,7 @@ import { IconType } from "react-icons";
 export interface BlogArticle {
   id: number;
   title: string;
+  data: ArticleData;
 }
 
 export interface ArticleHeaderData {
