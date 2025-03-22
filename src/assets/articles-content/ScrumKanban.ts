@@ -64,6 +64,12 @@ export const scrumVsKanban: ArticleData = {
     },
 
     {
+      h4: "You know what? move back to Waterfall...",
+      linkText: "Could Waterfall help the Vibe Coders?",
+      linkURL: "https://www.youtube.com/watch?v=xA1oqNrEpBk",
+    },
+
+    {
       h4: "Conclusion",
       img: scrumban,
       p1: `
