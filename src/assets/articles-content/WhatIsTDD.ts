@@ -11,6 +11,11 @@ export const whatistdd: ArticleData = {
   },
   sectionsData: [
     {
+      h4: "Self Tested Code",
+      linkText: "Martin Fowler about self-tested code",
+      linkURL: "https://youtu.be/vTbcXjTfqpY",
+    },
+    {
       h4: "The TDD Cycle",
       ul: [
         {
