@@ -108,6 +108,10 @@ fun add(a: Int, b: Int): Int {
     h4: "🔗 Learn More About TDD",
     ul: [
       {
+        linkText: "Practice TDD",
+        linkURL: "https://www.youtube.com/watch?v=yfP_v6qCdcs",
+      },
+      {
         linkText: "Did Kent Beck REALLY Invent TDD?",
         linkURL: "https://www.youtube.com/watch?v=x1O5cKCAgdk",
       },
