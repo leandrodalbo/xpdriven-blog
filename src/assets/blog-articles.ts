@@ -7,6 +7,7 @@ import { whatiscleancode } from "./articles-content/WhatIsCleanCode";
 import { BlogArticle } from "../types/types";
 import { nextArticleContent } from "./articles-content/NextArticle";
 import { scrumVsKanban } from "./articles-content/ScrumKanban";
+import { whySoftwareDesignMatters } from "./articles-content/softwaredesign";
 
 export const articles: BlogArticle[] = [
   {
@@ -46,7 +47,7 @@ export const articles: BlogArticle[] = [
   },
   {
     id: 7,
-    title: "How to Stay Productive as a Developer",
-    data: nextArticleContent,
+    title: "Why Software Design Matters",
+    data: whySoftwareDesignMatters,
   },
 ];
