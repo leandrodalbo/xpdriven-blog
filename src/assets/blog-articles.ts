@@ -5,7 +5,6 @@ import { introContent } from "./articles-content/Intro";
 import { whatistdd } from "./articles-content/WhatIsTDD";
 import { whatiscleancode } from "./articles-content/WhatIsCleanCode";
 import { BlogArticle } from "../types/types";
-import { nextArticleContent } from "./articles-content/NextArticle";
 import { scrumVsKanban } from "./articles-content/ScrumKanban";
 import { whySoftwareDesignMatters } from "./articles-content/softwaredesign";
 
