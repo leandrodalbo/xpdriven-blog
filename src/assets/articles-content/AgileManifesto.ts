@@ -47,17 +47,6 @@ export const agileManifestoContent: ArticleData = {
         },
       ],
     },
-
-    {
-      h4: "Being useful",
-      p1: `
-      Martin Fowler gives a clear explanation about what Agile
-      is about. How can developers become more useful for the business by
-      understanding the domain in which they are working?
-      `,
-      linkURL: "https://youtu.be/tedpry-czHw",
-      linkText: "Agile Frustrations (Martin Fowler)",
-    },
   ],
 
   footerData: {

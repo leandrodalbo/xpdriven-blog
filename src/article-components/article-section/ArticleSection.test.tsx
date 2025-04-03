@@ -22,14 +22,6 @@ describe("Article Sections Test", () => {
     expect(screen.getByTestId("section-ul")).toBeInTheDocument();
   });
 
-  it("renders agile manifesto section with link", () => {
-    render(<ArticleSection data={agileManifestoContent.sectionsData[3]} />);
-
-    expect(screen.getByTestId("section-header")).toBeInTheDocument();
-    expect(screen.getByTestId("section-text")).toBeInTheDocument();
-    expect(screen.getByTestId("section-link-resource")).toBeInTheDocument();
-  });
-
   it("renders an article section with pre code", () => {
     render(<ArticleSection data={whatiscleancode.sectionsData[2]} />);
 

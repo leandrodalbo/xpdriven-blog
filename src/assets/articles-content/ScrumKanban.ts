@@ -59,14 +59,14 @@ export const scrumVsKanban: ArticleData = {
     {
       h4: "When to Choose Scrum vs. Kanban",
       linkText:
-        "Jesper Boeg shares his Agile journey. Comparing XP with Scrum, Lean and Kanban agile methodologies",
-      linkURL: "https://www.youtube.com/watch?v=CzeeBatEqfs",
+        "My Agile Journey: XP, Scrum, Lean, Kanban & Back Again • Jesper Boeg",
+      linkURL: "https://www.youtube.com/watch?v=7H67V6noueE",
     },
 
     {
       h4: "About Waterfall",
-      linkText: "Back to Waterfall?",
-      linkURL: "https://www.youtube.com/watch?v=xA1oqNrEpBk",
+      linkText: "Waterfall Over Agile In 2023???",
+      linkURL: "https://www.youtube.com/watch?v=J4ihLROXzPk",
     },
 
     {

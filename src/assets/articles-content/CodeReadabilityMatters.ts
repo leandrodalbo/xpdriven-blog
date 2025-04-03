@@ -64,10 +64,6 @@ export const codeReadabilityMatters: ArticleData = {
         linkText: "Martin Fowler on Pair Programming",
         linkURL: "https://martinfowler.com/articles/on-pair-programming.html",
       },
-      {
-        linkText: "Why are programmers slow?",
-        linkURL: "https://youtu.be/MFsbcQmMJyM",
-      },
     ],
   },
 };
