@@ -49,12 +49,7 @@ export const whySoftwareDesignMatters: ArticleData = {
         },
       ],
     },
-    {
-      h4: "The Goal of Good Software Design",
-      p1: `
-      Our purpose must be to create a well-structured system that adapts to change, allows developers to meet customer needs with minimal friction, and remains sustainable over time.
-      `,
-    },
+
     {
       h4: "Key Takeaways",
       ul: [
@@ -77,12 +72,9 @@ export const whySoftwareDesignMatters: ArticleData = {
     },
   ],
   footerData: {
-    h4: "Conclusion",
-    ul: [
-      {
-        linkText: "When is software more expensive?",
-        linkURL: "https://youtu.be/dVNEw3MuCuw",
-      },
-    ],
+    h4: "The Goal of Good Software Design",
+    p1: `
+    Our purpose must be to create a well-structured system that adapts to change, allows developers to meet customer needs with minimal friction, and remains sustainable over time.
+    `,
   },
 };
