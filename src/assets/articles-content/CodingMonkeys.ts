@@ -34,26 +34,13 @@ export const codingMonkeysContent: ArticleData = {
       A coding monkey might accept AI suggestions leading to serious issues.
       `,
     },
-    {
-      h4: "The Industry Needs Thinkers, Not Coders",
-      p1: `
-      Software Engineering is about designing scalable, maintainable, and
-      efficient systems. Writing code is just a small part of the bigger
-      picture.
-      `,
-    },
   ],
   footerData: {
-    h4: "Take a look",
-    ul: [
-      {
-        linkText: "The end of programmers",
-        linkURL: "https://www.youtube.com/watch?v=WubVswYg2CE",
-      },
-      {
-        linkText: "Coding Monkeys (Martin Fowler)",
-        linkURL: "https://www.youtube.com/watch?v=S_5nl1uJ8bg",
-      },
-    ],
+    h4: "The Industry Needs Thinkers, Not Coders",
+    p1: `
+    Software Engineering is about designing scalable, maintainable, and
+    efficient systems. Writing code is just a small part of the bigger
+    picture.
+    `,
   },
 };
