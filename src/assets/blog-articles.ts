@@ -7,6 +7,7 @@ import { whatiscleancode } from "./articles-content/WhatIsCleanCode";
 import { BlogArticle } from "../types/types";
 import { scrumVsKanban } from "./articles-content/ScrumKanban";
 import { whySoftwareDesignMatters } from "./articles-content/softwaredesign";
+import { sfparadigms } from "./articles-content/SFParadigms";
 
 export const articles: BlogArticle[] = [
   {
@@ -48,5 +49,10 @@ export const articles: BlogArticle[] = [
     id: 7,
     title: "Why Software Design Matters",
     data: whySoftwareDesignMatters,
+  },
+  {
+    id: 8,
+    title: "AI an software paradigms",
+    data: sfparadigms,
   },
 ];
