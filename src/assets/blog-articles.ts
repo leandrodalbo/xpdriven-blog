@@ -52,7 +52,7 @@ export const articles: BlogArticle[] = [
   },
   {
     id: 8,
-    title: "AI an software paradigms",
+    title: "AI and software paradigms",
     data: sfparadigms,
   },
 ];
