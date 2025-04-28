@@ -36,6 +36,7 @@ export interface ArticleSectionData {
   linkclass?: string;
   ul?: ArticleLIData[];
   ulclass?: string;
+  sectionFooter?: string;
 }
 
 export interface ArticleFooterData {
