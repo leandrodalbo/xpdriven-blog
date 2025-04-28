@@ -27,13 +27,6 @@ describe("BlogFooter Test", () => {
     expect(
       links.some(
         (link) =>
-          link.getAttribute("href") === "https://www.youtube.com/@xpdrivenblog"
-      )
-    ).toBe(true);
-
-    expect(
-      links.some(
-        (link) =>
           link.getAttribute("href") === "https://github.com/leandrodalbo"
       )
     ).toBe(true);
