@@ -6,6 +6,8 @@ import { ArticleSection } from "./ArticleSection";
 import { agileManifestoContent } from "../../assets/articles-content/AgileManifesto";
 import { whatiscleancode } from "../../assets/articles-content/WhatIsCleanCode";
 
+import { sfparadigms } from "../../assets/articles-content/SFParadigms";
+
 describe("Article Sections Test", () => {
   it("renders agile manifesto first section", () => {
     render(<ArticleSection data={agileManifestoContent.sectionsData[0]} />);
@@ -27,5 +29,11 @@ describe("Article Sections Test", () => {
 
     expect(screen.getByTestId("section-pre-red")).toBeInTheDocument();
     expect(screen.getByTestId("section-pre-green")).toBeInTheDocument();
+  });
+
+  it("renders an article section with an optional footer", () => {
+    render(<ArticleSection data={sfparadigms.sectionsData[2]} />);
+
+    expect(screen.getByTestId("section-footer")).toBeInTheDocument();
   });
 });

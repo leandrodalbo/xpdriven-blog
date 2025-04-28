@@ -86,6 +86,15 @@ export const ArticleSection = ({ data }: ArticleSectionProps) => {
           ))}
         </ul>
       )}
+
+      {data.sectionFooter && (
+        <p
+          data-testid="section-footer"
+          className={data.p1class || "blog-article-p"}
+        >
+          {data.sectionFooter}
+        </p>
+      )}
     </section>
   );
 };
