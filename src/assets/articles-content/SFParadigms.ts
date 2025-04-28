@@ -15,8 +15,7 @@ export const sfparadigms: ArticleData = {
     {
       h4: "Paradigm Shifts",
       p1: `
-        Paradigm shifts continually reshape how we structure applications, build abstractions, and approach problem-solving. These paradigms profoundly influence modern software, shaping the tools and techniques developers rely on today.
-        
+        Paradigm shifts continually reshape how we structure applications, build abstractions, and approach problem-solving.
         These paradigms influence modern software profoundly, shaping the tools and techniques we rely on.
       `,
 
