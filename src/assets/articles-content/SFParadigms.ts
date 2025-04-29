@@ -1,5 +1,5 @@
 import { ArticleData } from "../../types/types";
-
+import paradigms from "../images/paradigms.jpg";
 export const sfparadigms: ArticleData = {
   headerData: {
     h1: "AI and Software Paradigms",
@@ -18,7 +18,7 @@ export const sfparadigms: ArticleData = {
         Paradigm shifts continually reshape how we structure applications, build abstractions, and approach problem-solving.
         These paradigms influence modern software profoundly, shaping the tools and techniques we rely on.
       `,
-
+      img: paradigms,
       ul: [
         {
           h6: "1960s - Structured Programming",
