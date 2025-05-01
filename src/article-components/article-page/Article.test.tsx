@@ -31,9 +31,7 @@ describe("ArticlePage Tests", () => {
 
     renderWithRouter();
 
-    expect(
-      screen.getByText("Welcome to the XPDriven Blog")
-    ).toBeInTheDocument();
+    expect(screen.getByText("Welcome to XPDriven Blog")).toBeInTheDocument();
   });
 
   it("renders Intro on non number article id", () => {
@@ -41,9 +39,7 @@ describe("ArticlePage Tests", () => {
 
     renderWithRouter();
 
-    expect(
-      screen.getByText("Welcome to the XPDriven Blog")
-    ).toBeInTheDocument();
+    expect(screen.getByText("Welcome to XPDriven Blog")).toBeInTheDocument();
   });
 
   it("renders Intro on invalid article id", () => {
@@ -51,8 +47,6 @@ describe("ArticlePage Tests", () => {
 
     renderWithRouter();
 
-    expect(
-      screen.getByText("Welcome to the XPDriven Blog")
-    ).toBeInTheDocument();
+    expect(screen.getByText("Welcome to XPDriven Blog")).toBeInTheDocument();
   });
 });

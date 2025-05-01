@@ -4,7 +4,7 @@ import introimg from "../images/intro.png";
 export const introContent: ArticleData = {
   headerData: {
     h1: "Welcome to XPDriven Blog",
-    p1: "This blog is dedicated to exploring the best practices in software development.",
+    p1: "This blog is dedicated to explore the best practices in software development.",
     p1class: "blog-article-p-center",
     p2: "The focus is on Test-Driven Development, Extreme Programming, Clean Code and Agile methodologies.",
     p2class: "blog-article-p-center",
@@ -13,15 +13,13 @@ export const introContent: ArticleData = {
     {
       h4: "♻️ TDD",
       p1: `
-      Test-Driven Development helps you write better code by ensuring tests come first.
-      Pioneered by Kent Beck, leads to more reliable software.
+      Test-Driven Development helps you write better code by ensuring tests come first, leading to more reliable software.
       `,
     },
     {
       h4: "👥 Extreme Programming",
       p1: `
       It emphasizes collaboration, continuous feedback, and rapid iterations. 
-      It’s all about delivering high-quality software faster.
       `,
     },
     {

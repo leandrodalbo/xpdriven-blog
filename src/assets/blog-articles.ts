@@ -12,7 +12,7 @@ import { sfparadigms } from "./articles-content/SFParadigms";
 export const articles: BlogArticle[] = [
   {
     id: 0,
-    title: "Welcome to the XPDriven Blog",
+    title: "Welcome to XPDriven Blog",
     data: introContent,
   },
   {
