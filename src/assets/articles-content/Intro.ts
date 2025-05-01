@@ -3,7 +3,7 @@ import introimg from "../images/intro.png";
 
 export const introContent: ArticleData = {
   headerData: {
-    h1: "Welcome to the XPDriven Blog",
+    h1: "Welcome to XPDriven Blog",
     p1: "This blog is dedicated to exploring the best practices in software development.",
     p1class: "blog-article-p-center",
     p2: "The focus is on Test-Driven Development, Extreme Programming, Clean Code and Agile methodologies.",
